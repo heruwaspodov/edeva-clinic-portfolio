@@ -2699,8 +2699,38 @@ input[type="submit"].btn.btn-primary:hover {
 
 /* Klinik Pratama Edeva brand palette */
 :root {
-    --edeva-burgundy: #824d83;
-    --edeva-burgundy-dark: #62315f;
+    --edeva-burgundy: #7a1f3d;
+    --edeva-burgundy-dark: #631730;
     --edeva-blush: #f2dfe8;
     --edeva-soft-white: #fdf9fb;
+}
+
+/* Button palette aligned with the burgundy in the Edeva logo. */
+.btn.btn-primary,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle,
+.navbar .navbar-nav .nav-item.btn-appointment .nav-link,
+input[type="submit"].btn.btn-primary {
+    background-color: var(--edeva-burgundy);
+    border-color: var(--edeva-burgundy);
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:not(:disabled):not(.disabled):active,
+.navbar .navbar-nav .nav-item.btn-appointment .nav-link:hover,
+input[type="submit"].btn.btn-primary:hover {
+    color: var(--edeva-burgundy);
+    border-color: var(--edeva-burgundy);
+}
+
+.btn.btn-default {
+    color: var(--edeva-burgundy);
+    border-color: var(--edeva-burgundy);
+}
+
+.btn.btn-default:hover {
+    background-color: var(--edeva-burgundy);
+    border-color: var(--edeva-burgundy);
 }

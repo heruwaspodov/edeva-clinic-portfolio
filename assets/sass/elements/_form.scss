@@ -1,0 +1,153 @@
+/*-------------------------
+  Form Styling
+-------------------------*/
+
+.form-control,
+.ui-input {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+    color: $light-gray;
+    background: transparent;
+    background-clip: padding-box;
+    border: none;
+    border-bottom: 1px solid $accent-1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    transition:
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+    @include media-query(575px) {
+        padding: 10px 0;
+    }
+    &:focus {
+        color: $dark-gray;
+        background: transparent;
+        border-color: $accent-1;
+        box-shadow: none;
+    }
+
+    &::placeholder {
+        color: $light-gray;
+        box-shadow: none;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus {
+        transition:
+            background-color 600000s 0s,
+            color 600000s 0s;
+    }
+}
+.search-field {
+    border-bottom: 1px solid $accent-1;
+    display: flex;
+    width: 100%;
+    .form-control,
+    .ui-input {
+        border-bottom: none;
+    }
+    button {
+        border: none;
+        &:focus {
+            border: none;
+        }
+    }
+}
+.newsletter-form {
+    .newsletter-field {
+        display: flex;
+        width: 489px;
+        margin-left: auto;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px;
+        border-radius: 5000px;
+        background: $white;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        @media (max-width: 1399px) {
+            width: auto;
+        }
+        @media (max-width: 1199px) {
+            margin-left: 0;
+        }
+        @media (max-width: 575px) {
+            width: auto;
+            width: 100%;
+        }
+        .form-control,
+        .ui-input {
+            padding: 5px 0 5px 20px;
+            border-bottom: none;
+        }
+        button {
+            width: 100%;
+            flex-shrink: 1;
+            padding: 12px 30px;
+            width: fit-content;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.2;
+            color: $white;
+            background-color: $accent-1;
+            border: none;
+            border-radius: 5000px;
+            cursor: pointer;
+            transition: background-color 0.15s ease-in-out;
+
+            &:hover {
+                background-color: darken($accent-1, 10%);
+            }
+        }
+    }
+}
+input[type="file"] {
+    display: none;
+}
+
+label {
+    &.error {
+        color: #ff0000;
+    }
+}
+
+.cus-checkBox {
+    input {
+        display: none;
+        color: $dark-gray;
+    }
+
+    label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        color: $dark-gray;
+        font-size: clamp(15px, 0.833vw, 32px);
+        font-weight: 400;
+
+        &::before {
+            content: "\f0c8";
+            font-family: $font-awesome;
+            color: $dark-gray;
+            font-size: clamp(16px, 1.042vw, 40px);
+            font-weight: 400;
+        }
+    }
+
+    input[type="checkbox"]:checked {
+        + label {
+            &::before {
+                content: "\f14a";
+                color: $accent-1;
+                font-weight: 600;
+            }
+        }
+    }
+}

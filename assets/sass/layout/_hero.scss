@@ -1,0 +1,101 @@
+.hero-banner-1 {
+    background: url("../media/hero/hero-1.webp") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    @include media-query(992px) {
+        background-position: left;
+    }
+    .hero-content {
+        position: relative;
+        height: 950px;
+        padding-top: 112px;
+        display: grid;
+        align-content: center;
+        @include media-query(1399px) {
+            height: 850px;
+            padding-top: 90px;
+        }
+        @include media-query(1199px) {
+            height: 750px;
+        }
+    }
+}
+.hero-banner-2 {
+    background: url("../media/hero/hero-2.webp") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .hero-content {
+        position: relative;
+        padding: 125px 0;
+        @include media-query(1399px) {
+            padding: 100px 0;
+        }
+        @include media-query(1199px) {
+            height: 80px 0;
+        }
+        @include media-query(767px) {
+            height: 60px 0;
+        }
+        .booking-block {
+            padding: 40px;
+            position: relative;
+            border-radius: 24px;
+            border: 2px solid $accent-2;
+            background: $white;
+        }
+    }
+}
+.hero-slideshow {
+    .slide-1 {
+        background: url("../media/hero/slideshow.webp") no-repeat;
+        background-position: 20% center;
+        background-size: cover;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        .hero-content {
+            position: relative;
+            height: 950px;
+            padding-top: 112px;
+            display: grid;
+            align-content: center;
+            @include media-query(1399px) {
+                height: 850px;
+                padding-top: 90px;
+            }
+            @include media-query(1199px) {
+                height: 750px;
+            }
+        }
+    }
+    .slider-block .arrow-btn.btn-prev {
+        transform: translate(6.5vw, -100%);
+        @include media-query(1799px) {
+            transform: translate(3.5vw, -100%);
+        }
+        @include media-query(1599px) {
+            transform: translate(1.5vw, -100%);
+        }
+        @include media-query(1399px) {
+            transform: translate(0.5vw, -100%);
+        }
+    }
+    .slider-block .arrow-btn.btn-next {
+        transform: translate(-6.5vw, -100%);
+        @include media-query(1799px) {
+            transform: translate(-3.5vw, -100%);
+        }
+        @include media-query(1599px) {
+            transform: translate(-1.5vw, -100%);
+        }
+        @include media-query(1399px) {
+            transform: translate(-0.5vw, -100%);
+        }
+    }
+}

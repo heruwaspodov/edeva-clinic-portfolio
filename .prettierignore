@@ -1,0 +1,7 @@
+dist/
+.vite/
+assets/media/
+assets/css/vendor/
+assets/js/vendor/
+assets/webfonts/
+node_modules/

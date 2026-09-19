@@ -2,15 +2,19 @@
 
 ## Firebase Hosting
 
-Situs ini adalah static site, jadi tidak memerlukan proses build atau Firebase SDK.
+Situs ini adalah static site tanpa Firebase SDK. Sebelum deploy, proses build ringan
+merender template `<head>` bersama menjadi metadata HTML final untuk setiap halaman.
+
+```bash
+node scripts/build-pages.js
+```
 
 1. Masuk ke Firebase CLI: `firebase login`
 2. Buat atau pilih Firebase project di Firebase Console.
 3. Deploy dari folder ini: `firebase deploy --only hosting`
 
-Konfigurasi `firebase.json` sudah menunjuk ke root proyek, karena seluruh file HTML,
-CSS, JavaScript, font, dan gambar disajikan langsung dari sana. Untuk menyimpan project
-ID secara lokal sudah disimpan di `.firebaserc` sebagai `edeva-clinic`.
+Konfigurasi `firebase.json` menyajikan folder `dist/` yang dibuat oleh perintah di atas.
+Project ID lokal tersimpan di `.firebaserc` sebagai `edeva-clinic`.
 
 ## Deploy otomatis
 

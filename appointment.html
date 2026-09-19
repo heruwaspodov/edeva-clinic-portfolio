@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="id">
+    <!-- shared-head -->
+
+    <body>
+        <!-- Main Wrapper Start -->
+        <div class="main-wrapper">
+            <div data-component="preloader"></div>
+
+            <div data-component="header"></div>
+            <!-- Page Title Section Start -->
+            <section class="page-title mb-100">
+                <div class="container">
+                    <div class="content text-center">
+                        <h1 class="ui-mb-16 title">Appointment</h1>
+                        <ul class="breadcrumb unstyled">
+                            <li>
+                                <a href="index.html"><img src="assets/media/icons/home.svg" alt="icon" /> Home</a>
+                            </li>
+                            <li>
+                                <a href="appointment.html">Appointment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Page Title Section End -->
+
+            <!-- Appointment Section Start -->
+            <section class="appointment-sec mt-140 mb-140 wow fadeInUp animated" data-wow-delay="300ms">
+                <div class="container position-relative z-2">
+                    <div class="row row-gap-30">
+                        <div class="col-xl-6">
+                            <div class="heading ui-mb-60">
+                                <h2 class="ui-mb-16">Book Your Healthy Appointment</h2>
+                                <p>
+                                    At Edeva Clinic, we often get asked about how we elevate your skin. Our expert care
+                                    and innovative solutions are designed to provide personalized treatments.
+                                </p>
+                            </div>
+                            <div class="row row-gap-30 ui-mb-50">
+                                <div class="col-sm-6">
+                                    <div class="contact-block-list-item">
+                                        <div class="icon-block bg-primary">
+                                            <img src="assets/media/icons/cell-white.png" alt="" />
+                                        </div>
+                                        <div>
+                                            <p>Call Now</p>
+                                            <a href="tel:1016427813" class="h5">(101) 642-7813</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="contact-block-list-item">
+                                        <div class="icon-block bg-primary">
+                                            <img src="assets/media/icons/envelope-white.svg" alt="" />
+                                        </div>
+                                        <div>
+                                            <p>Email</p>
+                                            <a href="mailto:info@example.com" class="h5">info@example.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="contact-block-list-item">
+                                        <div class="icon-block bg-primary">
+                                            <img src="assets/media/icons/map-marker-white.svg" alt="" />
+                                        </div>
+                                        <div>
+                                            <p>Address</p>
+                                            <p class="h5">1245 Wellington St. Main Boulevard, Pennsylvania</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-iframe">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89547.20751748905!2d9.02184784064612!3d45.46274824613956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilan%2C%20Metropolitan%20City%20of%20Milan%2C%20Italy!5e0!3m2!1sen!2s!4v1748006310673!5m2!1sen!2s"
+                                    width="600"
+                                    height="450"
+                                    style="border: 0"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="appointment-form-block bg-lightest-gray">
+                                <h3 class="ui-mb-10">
+                                    Book Now & Get <span class="color-primary">50% </span> Discount
+                                </h3>
+                                <p class="ui-mb-40">
+                                    Have questions or feedback? We 're here to help. Send us a message, and we'll
+                                    respond within 24 hours
+                                </p>
+                                <form action="index.html" method="post" class="contact-form">
+                                    <div class="row row-gap-30 row-gap-sm-24">
+                                        <div class="col-sm-6">
+                                            <input
+                                                type="text"
+                                                class="form-control ui-input"
+                                                name="first-name"
+                                                id="fname"
+                                                required
+                                                placeholder="First Name"
+                                            />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input
+                                                type="text"
+                                                class="form-control ui-input"
+                                                name="last-name"
+                                                id="lname"
+                                                required
+                                                placeholder="Last Name"
+                                            />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input
+                                                type="tel"
+                                                class="form-control ui-input"
+                                                name="phone"
+                                                id="phone"
+                                                required
+                                                placeholder="Your Phone"
+                                            />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input
+                                                type="email"
+                                                class="form-control ui-input"
+                                                name="mail"
+                                                id="mail"
+                                                required
+                                                placeholder="Your Email"
+                                            />
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <select
+                                                name="service"
+                                                id="service"
+                                                class="has-nice-select form-control ui-input"
+                                            >
+                                                <option value="" disabled selected>Service</option>
+                                                <option value="massage">Massage</option>
+                                                <option value="facial">Facial</option>
+                                                <option value="manicure">Manicure</option>
+                                                <option value="pedicure">Pedicure</option>
+                                                <option value="haircut">Haircut</option>
+                                                <option value="makeup">Makeup</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input
+                                                type="text"
+                                                name="date"
+                                                id="checkIn"
+                                                class="sel-input date_from date_to form-control ui-input"
+                                                placeholder="Select Date"
+                                            />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input
+                                                type="text"
+                                                name="time"
+                                                class="form-control ui-input timepicker"
+                                                placeholder="Time"
+                                            />
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <textarea
+                                                name="request"
+                                                class="form-control ui-input"
+                                                id="request"
+                                                rows="4"
+                                                placeholder="Special Requests?"
+                                            ></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="cus-btn-3 w-100">
+                                                <span class="text">Submit</span>
+                                                <span class="circle"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Appointment Section End -->
+
+            <!-- FAQ's Section Start -->
+            <section class="faq-sec mt-140 mb-140 wow fadeInUp animated" data-wow-delay="300ms">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="heading ui-mb-60">
+                                <p class="eyebrow ui-mb-10">FAQ’s</p>
+                                <h2 class="ui-mb-16">Frequently Asked Questions?</h2>
+                                <p class="dark-gray">
+                                    At Edeva Clinic, we often get asked about how we elevate your skin. Our expert care
+                                    and innovative solutions are designed to provide personalized treatments.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div id="FAQaccordion">
+                                <div class="faq-block ui-mb-40">
+                                    <a
+                                        href="faq.html"
+                                        class="h4 dark-gray accordion-button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq1"
+                                        aria-expanded="true"
+                                        aria-controls="faq1"
+                                    >
+                                        What beauty services do we offer to enhance your salon experience?
+                                    </a>
+                                    <div
+                                        id="faq1"
+                                        class="accordion-collapse collapse show"
+                                        aria-labelledby="faq1"
+                                        data-bs-parent="#FAQaccordion"
+                                    >
+                                        <p class="dark-gray ui-mt-20">
+                                            To enhance your beauty, it's essential to take care of your skin and
+                                            remember the importance of nutrition. Many clients ask, "How can I improve
+                                            the health of my hair?" The answer is simple: using high-quality products
+                                            and maintaining a regular hair care routine is key.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faq-block ui-mb-40">
+                                    <a
+                                        href="faq.html"
+                                        class="h4 dark-gray accordion-button collapsed"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq2"
+                                        aria-expanded="false"
+                                        aria-controls="faq2"
+                                    >
+                                        What features do we provide to streamline your beauty processes?
+                                    </a>
+                                    <div
+                                        id="faq2"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="faq2"
+                                        data-bs-parent="#FAQaccordion"
+                                    >
+                                        <p class="dark-gray ui-mt-20">
+                                            To enhance your beauty, it's essential to take care of your skin and
+                                            remember the importance of nutrition. Many clients ask, "How can I improve
+                                            the health of my hair?" The answer is simple: using high-quality products
+                                            and maintaining a regular hair care routine is key.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faq-block ui-mb-40">
+                                    <a
+                                        href="faq.html"
+                                        class="h4 dark-gray accordion-button collapsed"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq3"
+                                        aria-expanded="false"
+                                        aria-controls="faq2"
+                                    >
+                                        How can our salon solutions benefit your beauty team?
+                                    </a>
+                                    <div
+                                        id="faq3"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="faq2"
+                                        data-bs-parent="#FAQaccordion"
+                                    >
+                                        <p class="dark-gray ui-mt-20">
+                                            To enhance your beauty, it's essential to take care of your skin and
+                                            remember the importance of nutrition. Many clients ask, "How can I improve
+                                            the health of my hair?" The answer is simple: using high-quality products
+                                            and maintaining a regular hair care routine is key.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faq-block ui-mb-40">
+                                    <a
+                                        href="faq.html"
+                                        class="h4 dark-gray accordion-button collapsed"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq4"
+                                        aria-expanded="false"
+                                        aria-controls="faq2"
+                                    >
+                                        What support do we offer for optimizing your beauty tasks?
+                                    </a>
+                                    <div
+                                        id="faq4"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="faq2"
+                                        data-bs-parent="#FAQaccordion"
+                                    >
+                                        <p class="dark-gray ui-mt-20">
+                                            To enhance your beauty, it's essential to take care of your skin and
+                                            remember the importance of nutrition. Many clients ask, "How can I improve
+                                            the health of my hair?" The answer is simple: using high-quality products
+                                            and maintaining a regular hair care routine is key.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faq-block ui-mb-40">
+                                    <a
+                                        href="faq.html"
+                                        class="h4 dark-gray accordion-button collapsed"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq5"
+                                        aria-expanded="false"
+                                        aria-controls="faq2"
+                                    >
+                                        What tools are available to assist you in your beauty projects?
+                                    </a>
+                                    <div
+                                        id="faq5"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="faq2"
+                                        data-bs-parent="#FAQaccordion"
+                                    >
+                                        <p class="dark-gray ui-mt-20">
+                                            To enhance your beauty, it's essential to take care of your skin and
+                                            remember the importance of nutrition. Many clients ask, "How can I improve
+                                            the health of my hair?" The answer is simple: using high-quality products
+                                            and maintaining a regular hair care routine is key.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faq-block">
+                                    <a
+                                        href="faq.html"
+                                        class="h4 dark-gray accordion-button collapsed"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq6"
+                                        aria-expanded="false"
+                                        aria-controls="faq2"
+                                    >
+                                        How do our salon services adapt to your specific beauty needs?
+                                    </a>
+                                    <div
+                                        id="faq6"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="faq2"
+                                        data-bs-parent="#FAQaccordion"
+                                    >
+                                        <p class="dark-gray ui-mt-20">
+                                            To enhance your beauty, it's essential to take care of your skin and
+                                            remember the importance of nutrition. Many clients ask, "How can I improve
+                                            the health of my hair?" The answer is simple: using high-quality products
+                                            and maintaining a regular hair care routine is key.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/media/vector/decorative-2.svg" alt="" class="top-vector" />
+                <img src="assets/media/vector/decorative.svg" alt="" class="bottom-vector" />
+            </section>
+            <!-- FAQ's Section End -->
+            <div data-component="footer"></div>
+
+            <!-- Main Wrapper End -->
+        </div>
+
+        <!-- Back To Top Start -->
+        <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+        <!-- Mobile Menu Start -->
+        <div class="mobile-nav__wrapper">
+            <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+            <div class="mobile-nav__content">
+                <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+                <div class="logo-box">
+                    <a href="index.html" aria-label="logo image"><img src="assets/media/logo.webp" alt="" /></a>
+                </div>
+                <div class="mobile-nav__container"></div>
+                <ul class="mobile-nav__contact list-unstyled">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:example@company.com">example@company.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+12345678">+123 (4567) -890</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Mobile Menu End -->
+
+        <!-- Jquery Js -->
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+        <script src="assets/js/vendor/slick.min.js"></script>
+        <script src="assets/js/vendor/jquery-validator.js"></script>
+        <script src="assets/js/vendor/wow.js"></script>
+        <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+        <script src="assets/js/vendor/twentytwenty.js"></script>
+        <script src="assets/js/vendor/jquery.event.move.js"></script>
+        <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/vendor/picker.js"></script>
+        <script src="assets/js/vendor/picker.date.js"></script>
+        <script src="assets/js/vendor/jquery.timepicker.min.js"></script>
+        <script src="assets/js/vendor/date.js"></script>
+        <script src="assets/js/components.js"></script>
+    </body>
+</html>

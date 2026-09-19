@@ -1,0 +1,83 @@
+.title-banner {
+    height: clamp(310px, 28.866vw, 1054px);
+    background: $accent-1;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    overflow: hidden;
+    .title {
+        position: relative;
+        text-align: center;
+        z-index: 49;
+        padding-top: clamp(88px, 6.856vw, 368px);
+        h2,
+        .h2,
+        h6,
+        p {
+            color: $white !important;
+        }
+    }
+    .cloud-v1 {
+        position: absolute;
+        bottom: -4px;
+        width: 100%;
+        z-index: 6;
+        left: 0;
+        @include media-query(490px) {
+            height: 130px;
+            object-fit: cover;
+        }
+    }
+
+    .cloud-v2 {
+        position: absolute;
+        bottom: -1px;
+        width: 100%;
+        z-index: 1;
+        @include media-query(490px) {
+            height: 130px;
+            object-fit: cover;
+        }
+    }
+    .cloud-v3 {
+        animation: cloudMove1 50s linear infinite;
+        z-index: 2;
+        position: absolute;
+        bottom: -1px;
+        width: 100%;
+        @include media-query(490px) {
+            height: 130px;
+            object-fit: cover;
+        }
+    }
+    .cloud-v4 {
+        z-index: 3;
+        animation: cloudMove2 50s linear infinite;
+        position: absolute;
+        bottom: -1px;
+        width: 100%;
+        @include media-query(490px) {
+            height: 130px;
+            object-fit: cover;
+        }
+    }
+
+    @keyframes cloudMove1 {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes cloudMove2 {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}

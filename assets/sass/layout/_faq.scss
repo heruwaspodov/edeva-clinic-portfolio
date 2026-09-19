@@ -1,0 +1,75 @@
+.faq-sec {
+    position: relative;
+    color: $white;
+    &:not(.bg-primary) {
+        .faq-block {
+            .accordion-button {
+                &.collapsed {
+                    &::before {
+                        color: $dark-gray;
+                    }
+                }
+            }
+        }
+    }
+    .faq-block {
+        position: relative;
+        padding-left: 44px;
+        .accordion-button {
+            position: unset;
+            margin: 0;
+            padding: 0;
+
+            &.collapsed {
+                border-radius: 0px;
+                padding: 0;
+                background: none;
+                margin: 0;
+
+                &::before {
+                    background-image: none !important;
+                    color: $white;
+                    content: "\f067";
+                    font-family: $font-awesome;
+                    color: $white;
+                }
+            }
+
+            &:not(.collapsed) {
+                background: transparent;
+                border: none;
+                box-shadow: none;
+            }
+
+            &:focus {
+                border: none;
+                box-shadow: none;
+            }
+
+            &::before {
+                content: "\f068";
+                font-family: $font-awesome;
+                background-image: none !important;
+                position: absolute;
+                left: 0px;
+                font-weight: 300;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .top-vector {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .bottom-vector {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+}

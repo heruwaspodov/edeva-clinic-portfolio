@@ -1,0 +1,18 @@
+.work-sec {
+    position: relative;
+    .process-block {
+        display: flex;
+        gap: 16px;
+        .number {
+            flex-shrink: 0;
+            background-color: $accent-1;
+            color: $white;
+            display: grid;
+            width: 48px;
+            height: 48px;
+            align-content: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+    }
+}

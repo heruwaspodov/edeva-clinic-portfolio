@@ -1,0 +1,102 @@
+.blog-detail {
+    .detail-content {
+        font-weight: 400;
+        p {
+            font-weight: 400;
+        }
+        .main-img {
+            border-radius: 24px;
+        }
+        .top-bullets {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            li {
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                border-radius: 500px;
+                color: $dark-gray;
+                border: 1px solid $dark-gray;
+            }
+        }
+    }
+    .blog-img {
+        border-radius: 16px;
+    }
+    .bottom-row {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        .blog-tags-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            li {
+                a {
+                    color: $light-gray;
+                    border-radius: 4px;
+                    border: 1px solid $light-gray;
+                    padding: 4px 10px;
+                    transition: $transition;
+                    &:hover {
+                        background: $accent-1;
+                        color: $white;
+                        border-color: $accent-1;
+                    }
+                }
+            }
+        }
+        .social-share {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
+    .blogs-navigation {
+        padding-top: 40px;
+        border-top: 1px solid $accent-1;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        .devider {
+            height: 100%;
+            width: 1.235px;
+            background: $light-gray;
+        }
+        .icon {
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            background: $accent-2;
+            transition: $transition;
+            i {
+                font-size: 20px;
+                transition: $transition;
+                color: $accent-1;
+            }
+            &:hover {
+                background: $accent-1;
+                i {
+                    color: $white;
+                }
+            }
+            @include media-query(820px) {
+                width: 30px;
+                height: 30px;
+                i {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

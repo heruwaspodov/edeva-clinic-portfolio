@@ -1,0 +1,15 @@
+.benefits-sec {
+    position: relative;
+    .benefit-block {
+        .icon {
+            flex-shrink: 0;
+            background-color: $white;
+            display: grid;
+            width: 62px;
+            height: 62px;
+            align-content: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+    }
+}

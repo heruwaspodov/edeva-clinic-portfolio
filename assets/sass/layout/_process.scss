@@ -1,0 +1,46 @@
+.process-sec {
+    .video-block {
+        position: relative;
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            background: $accent-1;
+            cursor: pointer;
+            transition: $transition;
+            &:hover {
+                background: $accent-2;
+                svg {
+                    path {
+                        fill: $accent-1;
+                    }
+                }
+            }
+        }
+        .process-img {
+            border-radius: 24px;
+            width: 100%;
+        }
+    }
+    .process-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 64px;
+        row-gap: 30px;
+        li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+    .underline-text {
+        text-decoration: underline;
+    }
+}

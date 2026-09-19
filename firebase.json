@@ -1,16 +1,16 @@
 {
-  "hosting": {
-    "public": ".",
-    "cleanUrls": true,
-    "ignore": [
-      "firebase.json",
-      ".firebaserc",
-      ".git/**",
-      ".github/**",
-      ".firebase/**",
-      "**/.DS_Store",
-      "node_modules/**",
-      "README.md"
-    ]
-  }
+    "hosting": {
+        "public": "dist",
+        "cleanUrls": true,
+        "ignore": [
+            "firebase.json",
+            ".firebaserc",
+            ".git/**",
+            ".github/**",
+            ".firebase/**",
+            "**/.DS_Store",
+            "node_modules/**",
+            "README.md"
+        ]
+    }
 }

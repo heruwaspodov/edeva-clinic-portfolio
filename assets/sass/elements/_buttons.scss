@@ -1,0 +1,267 @@
+/*----------------------------------------*/
+/*  Button CSS START
+/*----------------------------------------*/
+
+.cus-btn {
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: $gap-8;
+    padding: 16px 46px;
+    font-size: 16px;
+    font-family: $font-primary;
+    font-weight: 600;
+    text-transform: none;
+    line-height: 120%;
+    border: 1px solid $accent-1;
+    background-color: $accent-1;
+    color: $white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 500px;
+
+    svg,
+    img {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        z-index: 9;
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .arr-1 {
+        right: 27px;
+        transform: rotate(-45deg);
+    }
+
+    .arr-2 {
+        left: -25%;
+    }
+
+    .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-color: $accent-2;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .text {
+        position: relative;
+        z-index: 1;
+        transform: translateX(-12px);
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    &:hover {
+        border: 0.2px solid $accent-1;
+        box-shadow:
+            -4px -4px 4px 0px rgba(0, 0, 0, 0.1) inset,
+            4px 4px 4px 0px rgba(0, 0, 0, 0.1) inset;
+        color: $white;
+
+        .arr-1 {
+            right: -25%;
+            transform: rotate(0deg);
+        }
+
+        .arr-2 {
+            left: 27px;
+        }
+
+        .text {
+            transform: translateX(12px);
+        }
+
+        .circle {
+            background-color: $accent-1;
+            width: 420px;
+            height: 420px;
+            opacity: 1;
+        }
+    }
+}
+
+.cus-btn-2 {
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: $gap-8;
+    padding: 16px 46px;
+    font-size: 16px;
+    font-family: $font-primary;
+    font-weight: 600;
+    text-transform: none;
+    line-height: 120%;
+    border: 1px solid $accent-1;
+    background: transparent;
+    color: $accent-1;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 500px;
+
+    img {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        z-index: 9;
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .arr-1 {
+        right: 27px;
+        transform: rotate(-45deg);
+    }
+
+    .arr-2 {
+        left: -25%;
+    }
+
+    .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-color: $accent-2;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .text {
+        position: relative;
+        z-index: 1;
+        transform: translateX(-12px);
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    &:hover {
+        box-shadow:
+            -4px -4px 4px 0px rgba(0, 0, 0, 0.1) inset,
+            4px 4px 4px 0px rgba(0, 0, 0, 0.1) inset;
+        color: $white;
+        background: $accent-1;
+
+        .arr-1 {
+            right: -25%;
+        }
+
+        .arr-2 {
+            left: 27px;
+        }
+
+        .text {
+            transform: translateX(12px);
+        }
+
+        .circle {
+            background-color: $accent-1;
+            width: 420px;
+            height: 420px;
+            opacity: 1;
+        }
+    }
+}
+
+.cus-btn-3 {
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: $gap-8;
+    padding: 16px 46px;
+    font-size: 16px;
+    font-family: $font-primary;
+    font-weight: 600;
+    text-transform: none;
+    line-height: 120%;
+    border: 1px solid $accent-1;
+    background-color: $accent-1;
+    color: $white;
+    cursor: pointer;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 500px;
+
+    .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-color: $accent-2;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .text {
+        position: relative;
+        z-index: 1;
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    &:hover {
+        border: 0.2px solid $accent-1;
+        box-shadow:
+            -4px -4px 4px 0px rgba(0, 0, 0, 0.1) inset,
+            4px 4px 4px 0px rgba(0, 0, 0, 0.1) inset;
+        color: $white;
+
+        .circle {
+            background-color: $accent-1;
+            width: 820px;
+            height: 820px;
+            opacity: 1;
+        }
+    }
+}
+/*----------------------------------------*/
+/* scroll to top
+/*----------------------------------------*/
+.scrollToTopBtn {
+    background-color: $accent-2;
+    border-radius: 50%;
+    border: none;
+    color: $accent-1;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 48px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.5s ease;
+
+    &:hover {
+        background: $accent-1;
+        color: $accent-2;
+        transition: $transition;
+        transform: scale(0.99);
+    }
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}

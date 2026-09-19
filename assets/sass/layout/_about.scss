@@ -1,0 +1,22 @@
+.about-sec {
+    .about-point-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 64px;
+        row-gap: 30px;
+        li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    .icon-block {
+        .icon {
+            min-width: 62px;
+            height: 62px;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+    }
+}

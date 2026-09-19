@@ -1,0 +1,135 @@
+.appointment-sec {
+    position: relative;
+
+    .contact-block-list-item {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        .icon-block {
+            flex-shrink: 0;
+            width: 62px;
+            height: 62px;
+            border-radius: 9.073px;
+            background-color: $white;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+
+    .appointment-form-block {
+        padding: 60px 40px;
+        border-radius: 24px;
+        background-color: $white;
+
+        @include media-query(1399px) {
+            padding: 45px 24px;
+        }
+    }
+
+    .appointment-linktree-cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    @media (min-width: 1200px) {
+        .appointment-linktree-cta {
+            margin-left: 32px;
+        }
+    }
+
+    .map-iframe {
+        border-radius: 24px;
+        height: 350px;
+
+        iframe {
+            border-radius: 24px;
+            width: 100%;
+            height: 100% !important;
+        }
+    }
+}
+
+.map-iframe-contact {
+    border-radius: 24px;
+    height: 100% !important;
+
+    iframe {
+        border-radius: 24px;
+        width: 100%;
+        min-height: 549px;
+        height: 100% !important;
+    }
+}
+.contact-form-block {
+    padding: 60px 40px;
+    border-radius: 24px;
+    background-color: $lightest-gray;
+
+    @include media-query(1399px) {
+        padding: 45px 24px;
+    }
+}
+
+.contact-img {
+    border-radius: 24px;
+}
+.contacts-sec {
+    position: relative;
+
+    .contact-block {
+        padding: 50px 20px;
+        border-radius: 24px;
+        border: 1px solid $accent-2;
+        background: $white;
+        color: $dark-gray;
+        text-align: center;
+        transition: $transition;
+
+        a,
+        p,
+        .title {
+            color: $dark-gray;
+            transition: $transition;
+        }
+
+        .icon-block {
+            margin-bottom: 40px;
+            height: 60px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+
+            svg {
+                path {
+                    stroke: $dark-gray;
+                    transition: $transition;
+                }
+            }
+        }
+
+        &:hover {
+            border: 1px solid $accent-1;
+            background: $accent-1;
+            color: $white;
+
+            a,
+            p,
+            .title {
+                color: $white;
+            }
+
+            .icon-block {
+                svg {
+                    path {
+                        stroke: $white;
+                        transition: $transition;
+                    }
+                }
+            }
+        }
+    }
+}

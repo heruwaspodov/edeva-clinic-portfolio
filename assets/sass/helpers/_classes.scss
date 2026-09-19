@@ -1,0 +1,201 @@
+// Text Colors
+.color-primary {
+    color: $accent-1 !important;
+}
+
+.color-primary-2 {
+    color: $accent-1 !important;
+}
+
+.medium-gray {
+    color: $medium-gray !important;
+}
+
+.dark-gray {
+    color: $dark-gray !important;
+}
+
+.light-gray {
+    color: $light-gray !important;
+}
+
+.lightest-gray {
+    color: $lightest-gray !important;
+}
+
+.white {
+    color: $white !important;
+}
+.black {
+    color: $black !important;
+}
+
+// Background Colors
+.bg-primary {
+    background: $accent-1 !important;
+}
+
+.bg-primary-2 {
+    background: $accent-2 !important;
+}
+
+.bg-medium-gray {
+    background: $medium-gray !important;
+}
+
+.bg-dark-gray {
+    background: $dark-gray !important;
+}
+
+.bg-light-gray {
+    background: $light-gray !important;
+}
+
+.bg-lightest-gray {
+    background: $lightest-gray !important;
+}
+
+.bg-white {
+    background: $white !important;
+}
+
+// ------------- Font Weight -------------- //
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.font-primary {
+    font-family: $font-primary;
+}
+
+.font-sec {
+    font-family: $font-sec;
+}
+
+// ------------- Border Radius -------------- //
+
+.br-4 {
+    border-radius: $br-4;
+}
+
+.br-8 {
+    border-radius: $br-8;
+}
+
+.br-10 {
+    border-radius: $br-10;
+}
+
+.br-12 {
+    border-radius: $br-12;
+}
+
+.br-14 {
+    border-radius: $br-14;
+}
+
+.br-16 {
+    border-radius: $br-16;
+}
+
+.br-18 {
+    border-radius: $br-18;
+}
+
+.br-20 {
+    border-radius: $br-20;
+}
+
+.br-24 {
+    border-radius: $br-24;
+}
+
+.br-32 {
+    border-radius: $br-32;
+}
+
+.br-48 {
+    border-radius: $br-48;
+}
+
+.br-50p {
+    border-radius: 50%;
+}
+
+.br-353 {
+    border-radius: 353px;
+}
+
+.row-gap-30 {
+    row-gap: 30px;
+}
+
+@media (max-width: 575px) {
+    .row-gap-sm-24 {
+        row-gap: 24px;
+    }
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.top-vector {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    @include media-query(1399px) {
+        width: 160px;
+    }
+    @include media-query(1199px) {
+        width: 130px;
+    }
+    @include media-query(575px) {
+        width: 100px;
+    }
+}
+
+.bottom-vector {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    @include media-query(1399px) {
+        width: 120px;
+    }
+    @include media-query(1199px) {
+        width: 100px;
+    }
+
+    @include media-query(575px) {
+        width: 80px;
+    }
+}

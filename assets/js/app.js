@@ -78,10 +78,12 @@ var MyScroll = "";
         },
         header: function () {
             function dynamicCurrentMenuClass(selector) {
-                let FileName = window.location.href.split("/").reverse()[0];
+                let FileName = window.location.pathname.split("/").reverse()[0] || "index.html";
                 selector.find("li").each(function () {
                     let anchor = $(this).find("a");
-                    if ($(anchor).attr("href") == FileName) {
+                    let href = ($(anchor).attr("href") || "").split("/").reverse()[0].split("?")[0];
+                    if (href == FileName) {
+                        anchor.addClass("active").attr("aria-current", "page");
                         $(this).addClass("current");
                     }
                 });
@@ -90,8 +92,9 @@ var MyScroll = "";
                         $(this).addClass("current");
                     }
                 });
-                if ("" == FileName) {
+                if ("index.html" == FileName) {
                     selector.find("li").eq(0).addClass("current");
+                    selector.find("li").eq(0).find("a").addClass("active").attr("aria-current", "page");
                 }
             }
             if ($(".main-menu__list").length) {

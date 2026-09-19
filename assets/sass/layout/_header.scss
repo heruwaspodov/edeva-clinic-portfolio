@@ -596,10 +596,6 @@
             visibility 500ms ease 0ms,
             transform 500ms ease 0ms;
 
-        @include media-query(490px) {
-            width: clamp(250px, 55.102vw, 450px);
-        }
-
         .main-menu__nav {
             display: block;
             padding: 0;

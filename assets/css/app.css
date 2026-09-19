@@ -29302,12 +29302,6 @@ label.error {
         transform 500ms ease 0ms;
 }
 
-@media (max-width: 490px) {
-    .mobile-nav__wrapper .mobile-nav__content {
-        width: clamp(250px, 55.102vw, 450px);
-    }
-}
-
 .mobile-nav__wrapper .mobile-nav__content .main-menu__nav {
     display: block;
     padding: 0;

@@ -1,0 +1,146 @@
+[
+    {
+        "slug": "facial-vitamin-c",
+        "name": "Facial Vitamin C",
+        "image": "assets/media/services/service-2.png",
+        "description": "Facial dengan pilihan Vitamin C untuk melengkapi perawatan kulit Anda."
+    },
+    {
+        "slug": "facial-tea-tree-oil",
+        "name": "Facial Tea Tree Oil",
+        "image": "assets/media/services/service-7.png",
+        "description": "Facial dengan pilihan Tea Tree Oil sesuai kebutuhan kulit Anda."
+    },
+    {
+        "slug": "acne-injection",
+        "name": "Acne Injection",
+        "image": "assets/media/services/service-1.png",
+        "description": "Layanan acne injection yang diawali dengan penilaian kondisi kulit."
+    },
+    {
+        "slug": "detox-skin-facial",
+        "name": "Detox Skin Facial",
+        "image": "assets/media/services/service-7.png",
+        "description": "Pilihan facial untuk rutinitas perawatan kulit yang lebih menyeluruh."
+    },
+    {
+        "slug": "facial-gold-mask",
+        "name": "Facial Gold Mask",
+        "image": "assets/media/services/service-7.png",
+        "description": "Facial dengan pilihan masker gold sebagai bagian dari perawatan."
+    },
+    {
+        "slug": "facial-black-gold",
+        "name": "Facial Black Gold",
+        "image": "assets/media/services/service-7.png",
+        "description": "Pilihan facial Black Gold di Klinik Edeva."
+    },
+    {
+        "slug": "biolifting",
+        "name": "Biolifting",
+        "image": "assets/media/services/service-2.png",
+        "description": "Konsultasikan pilihan Biolifting sesuai kondisi dan tujuan perawatan Anda."
+    },
+    {
+        "slug": "eye-treatment",
+        "name": "Eye Treatment",
+        "image": "assets/media/services/service-2.png",
+        "description": "Perawatan untuk area sekitar mata yang disesuaikan dengan kebutuhan Anda."
+    },
+    {
+        "slug": "diamond-peel",
+        "name": "Diamond Peel",
+        "image": "assets/media/services/service-2.png",
+        "description": "Pilihan perawatan Diamond Peel untuk kulit wajah."
+    },
+    {
+        "slug": "hydra-peel",
+        "name": "Hydra Peel",
+        "image": "assets/media/services/service-2.png",
+        "description": "Pilihan perawatan Hydra Peel untuk kulit wajah."
+    },
+    {
+        "slug": "facial-whitening-peel",
+        "name": "Facial Whitening Peel",
+        "image": "assets/media/services/service-7.png",
+        "description": "Facial dengan pilihan Whitening Peel sesuai kondisi kulit Anda."
+    },
+    {
+        "slug": "facial-clay-mask",
+        "name": "Facial Clay Mask",
+        "image": "assets/media/services/service-7.png",
+        "description": "Facial dengan pilihan masker clay sebagai bagian dari perawatan."
+    },
+    {
+        "slug": "facial-pearl-mask",
+        "name": "Facial Pearl Mask",
+        "image": "assets/media/services/service-7.png",
+        "description": "Facial dengan pilihan masker pearl sebagai bagian dari perawatan."
+    },
+    {
+        "slug": "oxy",
+        "name": "Oxy",
+        "image": "assets/media/services/service-2.png",
+        "description": "Konsultasikan pilihan perawatan Oxy sesuai kebutuhan kulit Anda."
+    },
+    {
+        "slug": "rejuvenation",
+        "name": "Rejuvenation",
+        "image": "assets/media/services/service-2.png",
+        "description": "Pilihan perawatan Rejuvenation yang disesuaikan dengan kondisi kulit."
+    },
+    {
+        "slug": "botox",
+        "name": "Botox",
+        "image": "assets/media/services/service-1.png",
+        "description": "Konsultasikan layanan Botox dan tujuan perawatan Anda bersama tim klinik."
+    },
+    {
+        "slug": "chin-filler",
+        "name": "Chin Filler",
+        "image": "assets/media/services/service-1.png",
+        "description": "Konsultasikan pilihan Chin Filler sesuai kondisi dan tujuan perawatan."
+    },
+    {
+        "slug": "nose-filler",
+        "name": "Nose Filler",
+        "image": "assets/media/services/service-1.png",
+        "description": "Konsultasikan pilihan Nose Filler sesuai kondisi dan tujuan perawatan."
+    },
+    {
+        "slug": "photodynamic-therapy-pdt",
+        "name": "Photodynamic therapy (PDT)",
+        "image": "assets/media/services/service-1.png",
+        "description": "Konsultasikan pilihan Photodynamic Therapy (PDT) bersama tim klinik."
+    },
+    {
+        "slug": "skin-booster",
+        "name": "Skin Booster",
+        "image": "assets/media/services/service-5.png",
+        "description": "Konsultasikan pilihan Skin Booster sesuai kebutuhan kulit Anda."
+    },
+    {
+        "slug": "radio-frequency-slimming",
+        "name": "Radio Frequency (Slimming)",
+        "image": "assets/media/services/service-8.png",
+        "description": "Konsultasikan pilihan Radio Frequency (Slimming) sesuai tujuan Anda."
+    },
+    {
+        "slug": "intense-pulse-light-ipl-hair-removal-ketiak",
+        "name": "Intense Pulse Light (IPL) Hair Removal Ketiak",
+        "image": "assets/media/services/service-1.png",
+        "description": "Layanan IPL hair removal untuk area ketiak."
+    },
+    {
+        "slug": "intense-pulse-light-ipl-hair-removal-kaki",
+        "name": "Intense Pulse Light (IPL) Hair Removal Kaki",
+        "image": "assets/media/services/service-1.png",
+        "description": "Layanan IPL hair removal untuk area kaki."
+    },
+    {
+        "slug": "intense-pulse-light-ipl-hair-removal-lengan",
+        "name": "Intense Pulse Light (IPL) Hair Removal Lengan",
+        "image": "assets/media/services/service-1.png",
+        "description": "Layanan IPL hair removal untuk area lengan."
+    }
+]

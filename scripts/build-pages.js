@@ -23,6 +23,10 @@ const pages = {
         title: "Detail Layanan Perawatan Kulit | Klinik Edeva Tasikmalaya",
         description: "Informasi layanan kecantikan dan perawatan kulit di Klinik Edeva Tasikmalaya.",
     },
+    "products.html": {
+        title: "Produk Perawatan Kulit | Klinik Edeva Tasikmalaya",
+        description: "Temukan produk perawatan kulit Klinik Edeva Tasikmalaya untuk melengkapi rutinitas skincare Anda.",
+    },
     "portfolio.html": {
         title: "Galeri Perawatan | Klinik Edeva Tasikmalaya",
         description: "Lihat galeri layanan dan perawatan di Klinik Edeva Tasikmalaya.",
@@ -85,6 +89,14 @@ function renderHead(page, filename) {
     return headTemplate.replace(/{{(title|description|canonicalUrl|structuredData)}}/g, (_, key) => values[key]);
 }
 
+function renderPage(source, page, filename) {
+    const preloader = fs.readFileSync(path.join(root, "components", "preloader.html"), "utf8");
+
+    return source
+        .replace("<!-- shared-head -->", () => renderHead(page, filename))
+        .replace(/<div\s+data-component="preloader"><\/div>/, () => preloader.trim());
+}
+
 function buildPages() {
     const pageEntries = Object.entries(pages).filter(([filename]) => {
         if (fs.existsSync(path.join(root, filename))) {
@@ -112,7 +124,7 @@ function buildPages() {
             throw new Error(`Missing ${marker} in ${filename}`);
         }
 
-        fs.writeFileSync(path.join(output, filename), source.replace(marker, renderHead(page, filename)));
+        fs.writeFileSync(path.join(output, filename), renderPage(source, page, filename));
     }
 
     console.log(`Built ${pageEntries.length} pages in dist/.`);
@@ -122,4 +134,4 @@ if (require.main === module) {
     buildPages();
 }
 
-module.exports = { buildPages, pages, renderHead };
+module.exports = { buildPages, pages, renderHead, renderPage };

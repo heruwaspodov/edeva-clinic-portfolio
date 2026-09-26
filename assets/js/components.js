@@ -21,6 +21,26 @@
         }),
     )
         .then(function () {
+            if (!document.querySelector("[data-service-list], [data-service-detail]")) {
+                return;
+            }
+
+            return new Promise(function (resolve, reject) {
+                var servicesScript = document.createElement("script");
+                servicesScript.src = "/assets/js/services.js";
+                servicesScript.onload = function () {
+                    window.EdevaServices.init().then(resolve, reject);
+                };
+                servicesScript.onerror = function () {
+                    document.querySelectorAll("[data-service-list], [data-service-detail]").forEach(function (target) {
+                        target.textContent = "Layanan belum dapat dimuat. Silakan coba lagi.";
+                    });
+                    resolve();
+                };
+                document.body.appendChild(servicesScript);
+            });
+        })
+        .then(function () {
             var appScript = document.createElement("script");
             appScript.src = "/assets/js/app.js";
             document.body.appendChild(appScript);

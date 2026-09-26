@@ -7,8 +7,9 @@ Live site: <https://edeva-clinic.web.app>
 
 ## Fitur
 
-- Halaman layanan, portofolio, appointment, dan kontak.
-- Header, footer, preloader, dan metadata SEO yang reusable.
+- Halaman layanan, produk, portofolio, appointment, dan kontak.
+- Katalog 24 layanan dari `assets/data/services.json` untuk slider beranda, daftar layanan, dan halaman detail.
+- Header, footer, menu mobile, preloader, dan metadata SEO yang reusable.
 - Clean URL tanpa ekstensi `.html` saat diakses melalui Firebase Hosting.
 - Metadata Open Graph, canonical URL, dan schema `MedicalClinic`.
 - Tautan Instagram, TikTok, Shopee, dan Google Maps Klinik Edeva.
@@ -16,12 +17,18 @@ Live site: <https://edeva-clinic.web.app>
 ## Struktur proyek
 
 ```text
-components/          Shared head, header, footer, and preloader
+components/          Shared head, header, footer, mobile menu, services, team, and preloader
 assets/              Stylesheets, scripts, images, icons, and vendor files
 scripts/build-pages.js  Static page builder and SEO metadata renderer
 *.html               Source pages
 dist/                Generated deployment output
 ```
+
+Untuk mengubah nama, gambar, atau ringkasan layanan, edit entri `slug`, `name`,
+`image`, dan `description` di `assets/data/services.json`. Tautan detail memakai
+`/service-detail.html?service=<slug>`. Beberapa layanan saat ini berbagi foto
+ilustrasi dari `assets/media/services/`; ganti jalur `image` per entri bila
+foto khususnya sudah tersedia.
 
 ## Menjalankan secara lokal
 

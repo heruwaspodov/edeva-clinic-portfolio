@@ -17,10 +17,10 @@ var MyScroll = "";
             Init.methods();
         },
         s: function (e) {
-            (this._window = $(window)),
+            ((this._window = $(window)),
                 (this._document = $(document)),
                 (this._body = $("body")),
-                (this._html = $("html"));
+                (this._html = $("html")));
         },
         methods: function (e) {
             Init.w();
@@ -78,10 +78,15 @@ var MyScroll = "";
         },
         header: function () {
             function dynamicCurrentMenuClass(selector) {
-                let FileName = window.location.pathname.split("/").reverse()[0] || "index.html";
+                let FileName = window.location.pathname.replace(/\/$/, "").split("/").pop().replace(/\.html$/, "") || "index";
                 selector.find("li").each(function () {
                     let anchor = $(this).find("a");
-                    let href = ($(anchor).attr("href") || "").split("/").reverse()[0].split("?")[0];
+                    let href = ($(anchor).attr("href") || "")
+                        .split(/[?#]/)[0]
+                        .replace(/\/$/, "")
+                        .split("/")
+                        .pop()
+                        .replace(/\.html$/, "") || "index";
                     if (href == FileName) {
                         anchor.addClass("active").attr("aria-current", "page");
                         $(this).addClass("current");
@@ -92,7 +97,7 @@ var MyScroll = "";
                         $(this).addClass("current");
                     }
                 });
-                if ("index.html" == FileName) {
+                if ("index" == FileName) {
                     selector.find("li").eq(0).addClass("current");
                     selector.find("li").eq(0).find("a").addClass("active").attr("aria-current", "page");
                 }
@@ -173,14 +178,15 @@ var MyScroll = "";
                 });
             }
             if ($(".services-slider").length) {
-                $(".services-slider").slick({
+                const $servicesSlider = $(".services-slider");
+                $servicesSlider.slick({
                     autoplay: !1,
                     autoplaySpeed: 3000,
                     speed: 900,
                     arrows: !1,
                     swipe: true,
                     draggable: true,
-                    dots: true,
+                    dots: false,
                     slidesToShow: 4,
                     pauseOnFocus: !1,
                     pauseOnHover: !1,
@@ -205,6 +211,35 @@ var MyScroll = "";
                         },
                     ],
                 });
+
+                const $servicesPagination = $servicesSlider.closest(".slider-block").find(".services-pagination");
+                const serviceCount = $servicesSlider.slick("getSlick").slideCount;
+                const pageCount = Math.min(4, serviceCount);
+                const pageSize = Math.ceil(serviceCount / pageCount);
+
+                for (let page = 0; page < pageCount; page++) {
+                    const start = page * pageSize + 1;
+                    const end = Math.min((page + 1) * pageSize, serviceCount);
+                    const $button = $("<button>", {
+                        type: "button",
+                        "aria-label": `Layanan ${start} sampai ${end}`,
+                    }).on("click", function () {
+                        $servicesSlider.slick("slickGoTo", page * pageSize);
+                    });
+                    $servicesPagination.append($("<li>").append($button));
+                }
+
+                function updateServicesPagination(_, slick, currentSlide) {
+                    const activePage = Math.min(pageCount - 1, Math.floor((currentSlide || 0) / pageSize));
+                    $servicesPagination.children().each(function (page) {
+                        const active = page === activePage;
+                        $(this).toggleClass("slick-active", active);
+                        $(this).find("button").attr("aria-pressed", active);
+                    });
+                }
+
+                $servicesSlider.on("afterChange reInit", updateServicesPagination);
+                updateServicesPagination(null, null, $servicesSlider.slick("slickCurrentSlide"));
             }
             if ($(".services-slider-2").length) {
                 $(".services-slider-2").slick({
@@ -242,33 +277,34 @@ var MyScroll = "";
             }
             if ($(".team-slider").length) {
                 $(".team-slider").slick({
-                    autoplay: !1,
-                    autoplaySpeed: 3000,
+                    autoplay: false,
                     speed: 900,
-                    arrows: !1,
+                    arrows: false,
                     swipe: true,
                     draggable: true,
-                    dots: true,
+                    dots: false,
+                    infinite: true,
                     slidesToShow: 4,
-                    pauseOnFocus: !1,
-                    pauseOnHover: !1,
                     responsive: [
                         {
-                            breakpoint: 1399,
+                            breakpoint: 1199,
                             settings: {
                                 slidesToShow: 3,
+                                dots: true,
                             },
                         },
                         {
                             breakpoint: 999,
                             settings: {
                                 slidesToShow: 2,
+                                dots: true,
                             },
                         },
                         {
                             breakpoint: 575,
                             settings: {
                                 slidesToShow: 1,
+                                dots: true,
                             },
                         },
                     ],

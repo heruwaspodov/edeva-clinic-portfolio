@@ -1,4 +1,15 @@
 .team-sec {
+    .team-slide {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media (min-width: 1200px) {
+        .slider-arrows {
+            display: none;
+        }
+    }
+
     .team-card {
         position: relative;
         border-radius: 12px;
@@ -6,6 +17,8 @@
 
         img {
             width: 100%;
+            aspect-ratio: 2 / 3;
+            object-fit: cover;
         }
 
         .text-block {

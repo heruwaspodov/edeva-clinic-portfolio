@@ -56,13 +56,14 @@
         }
 
         return (
+            '<div class="service-slide">' +
             '<a class="service-card" href="' +
             detailUrl(service) +
             '" aria-label="Lihat detail ' +
             escapeHtml(service.name) +
             '">' +
             content +
-            "</a>"
+            "</a></div>"
         );
     }
 

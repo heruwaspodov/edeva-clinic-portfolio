@@ -30510,6 +30510,11 @@ label.error {
     object-fit: cover;
 }
 
+.services-sec .services-slider .service-slide {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .services-sec .service-card {
     position: relative;
     border-radius: 16px;

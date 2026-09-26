@@ -49,6 +49,11 @@
 //     }
 // }
 .services-sec {
+    .services-slider .service-slide {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     a.service-card {
         display: block;
     }

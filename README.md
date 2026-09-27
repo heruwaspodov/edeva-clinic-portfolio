@@ -1,6 +1,6 @@
-# Klinik Pratama Edeva
+# Edeva Clinic
 
-Website resmi Klinik Pratama Edeva, klinik kecantikan dan perawatan kulit di
+Website resmi Edeva Clinic, klinik kecantikan dan perawatan kulit di
 Tasikmalaya.
 
 Live site: <https://edeva-clinic.web.app>
@@ -12,7 +12,7 @@ Live site: <https://edeva-clinic.web.app>
 - Header, footer, menu mobile, preloader, dan metadata SEO yang reusable.
 - Clean URL tanpa ekstensi `.html` saat diakses melalui Firebase Hosting.
 - Metadata Open Graph, canonical URL, dan schema `MedicalClinic`.
-- Tautan Instagram, TikTok, Shopee, dan Google Maps Klinik Edeva.
+- Tautan Instagram, TikTok, Shopee, dan Google Maps Edeva Clinic.
 
 ## Struktur proyek
 

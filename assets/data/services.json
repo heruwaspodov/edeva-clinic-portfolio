@@ -4,7 +4,7 @@
         "name": "Facial Vitamin C",
         "image": "assets/media/services/facial-vitamin-c/image-0.webp",
         "description": "Facial dengan pilihan Vitamin C untuk melengkapi perawatan kulit Anda.",
-        "long_description": "Facial Vitamin C adalah pilihan perawatan wajah dengan tambahan Vitamin C dalam rangkaian facial. Tim Klinik Edeva akan menilai kondisi kulit terlebih dahulu agar tahapan perawatan sesuai dengan kebutuhan Anda.",
+        "long_description": "Facial Vitamin C adalah pilihan perawatan wajah dengan tambahan Vitamin C dalam rangkaian facial. Tim Edeva Clinic akan menilai kondisi kulit terlebih dahulu agar tahapan perawatan sesuai dengan kebutuhan Anda.",
         "images": [
             "assets/media/services/facial-vitamin-c/image-0.webp",
             "assets/media/services/facial-vitamin-c/image-1.webp"
@@ -58,8 +58,8 @@
         "slug": "facial-black-gold",
         "name": "Facial Black Gold",
         "image": "assets/media/services/facial-black-gold/image-0.webp",
-        "description": "Pilihan facial Black Gold di Klinik Edeva.",
-        "long_description": "Facial Black Gold adalah salah satu pilihan perawatan wajah di Klinik Edeva. Konsultasi sebelum facial membantu tim menentukan tahapan yang sesuai dengan kebutuhan kulit Anda.",
+        "description": "Pilihan facial Black Gold di Edeva Clinic.",
+        "long_description": "Facial Black Gold adalah salah satu pilihan perawatan wajah di Edeva Clinic. Konsultasi sebelum facial membantu tim menentukan tahapan yang sesuai dengan kebutuhan kulit Anda.",
         "images": [
             "assets/media/services/facial-black-gold/image-0.webp",
             "assets/media/services/facial-black-gold/image-1.webp"
@@ -97,7 +97,7 @@
         "name": "Hydra Peel",
         "image": "assets/media/services/hydra-peel/image-0.webp",
         "description": "Pilihan perawatan Hydra Peel untuk kulit wajah.",
-        "long_description": "Hydra Peel merupakan salah satu pilihan perawatan kulit wajah di Klinik Edeva. Sebelum tindakan, tim akan mendiskusikan kebutuhan kulit Anda dan menyesuaikan rangkaian perawatan.",
+        "long_description": "Hydra Peel merupakan salah satu pilihan perawatan kulit wajah di Edeva Clinic. Sebelum tindakan, tim akan mendiskusikan kebutuhan kulit Anda dan menyesuaikan rangkaian perawatan.",
         "images": ["assets/media/services/hydra-peel/image-0.webp", "assets/media/services/hydra-peel/image-1.webp"]
     },
     {
@@ -138,7 +138,7 @@
         "name": "Oxy",
         "image": "assets/media/services/oxy/image-0.webp",
         "description": "Konsultasikan pilihan perawatan Oxy sesuai kebutuhan kulit Anda.",
-        "long_description": "Oxy merupakan salah satu pilihan layanan perawatan kulit di Klinik Edeva. Tim klinik akan menjelaskan proses dan menilai kesesuaiannya dengan kebutuhan kulit Anda sebelum perawatan.",
+        "long_description": "Oxy merupakan salah satu pilihan layanan perawatan kulit di Edeva Clinic. Tim klinik akan menjelaskan proses dan menilai kesesuaiannya dengan kebutuhan kulit Anda sebelum perawatan.",
         "images": ["assets/media/services/oxy/image-0.webp", "assets/media/services/oxy/image-1.webp"]
     },
     {

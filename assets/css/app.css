@@ -30081,6 +30081,10 @@ label.error {
     border-radius: 0 0 16px 16px;
 }
 
+.portfolio .clinic-gallery-item {
+    aspect-ratio: 4 / 3;
+}
+
 .nav-tabs {
     border: none;
     gap: 50px;

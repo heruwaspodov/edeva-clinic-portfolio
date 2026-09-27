@@ -61,6 +61,26 @@
             });
         })
         .then(function () {
+            if (!document.querySelector("[data-clinic-home-list], [data-clinic-list]")) {
+                return;
+            }
+
+            return new Promise(function (resolve, reject) {
+                var clinicScript = document.createElement("script");
+                clinicScript.src = "/assets/js/our-clinic.js";
+                clinicScript.onload = function () {
+                    window.EdevaClinic.init().then(resolve, reject);
+                };
+                clinicScript.onerror = function () {
+                    document.querySelectorAll("[data-clinic-home-list], [data-clinic-list]").forEach(function (target) {
+                        target.textContent = "Galeri klinik belum dapat dimuat. Silakan coba lagi.";
+                    });
+                    resolve();
+                };
+                document.body.appendChild(clinicScript);
+            });
+        })
+        .then(function () {
             var appScript = document.createElement("script");
             appScript.src = "/assets/js/app.js";
             document.body.appendChild(appScript);

@@ -83,7 +83,7 @@
     }
 
     function setMetadata(service) {
-        document.title = service.name + " | Klinik Edeva Tasikmalaya";
+        document.title = service.name + " | Edeva Clinic Tasikmalaya";
         var description = document.querySelector('meta[name="description"]');
         if (description) description.content = service.description;
 
@@ -153,7 +153,7 @@
                 '<div class="text-center"><p class="ui-mb-30">' +
                 (slug ? "Layanan yang Anda cari tidak tersedia." : "Pilih layanan untuk melihat detailnya.") +
                 '</p><a class="cus-btn" href="/services">Lihat semua layanan</a></div>';
-            document.title = missing + " | Klinik Edeva Tasikmalaya";
+            document.title = missing + " | Edeva Clinic Tasikmalaya";
             return;
         }
 

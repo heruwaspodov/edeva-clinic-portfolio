@@ -10,35 +10,35 @@ const headTemplate = fs.readFileSync(path.join(root, "components", "head.html"),
 
 const pages = {
     "index.html": {
-        title: "Klinik Edeva Tasikmalaya | Klinik Kecantikan & Perawatan Kulit",
+        title: "Edeva Clinic Tasikmalaya | Klinik Kecantikan & Perawatan Kulit",
         description:
-            "Klinik Edeva adalah klinik kecantikan dan perawatan kulit di Tasikmalaya. Temukan treatment kecantikan dan perawatan kulit sesuai kebutuhan Anda.",
+            "Edeva Clinic adalah klinik kecantikan dan perawatan kulit di Tasikmalaya. Temukan treatment kecantikan dan perawatan kulit sesuai kebutuhan Anda.",
         includeSchema: true,
     },
     "services.html": {
-        title: "Layanan Perawatan Kulit | Klinik Edeva Tasikmalaya",
-        description: "Lihat layanan kecantikan dan perawatan kulit yang tersedia di Klinik Edeva Tasikmalaya.",
+        title: "Layanan Perawatan Kulit | Edeva Clinic Tasikmalaya",
+        description: "Lihat layanan kecantikan dan perawatan kulit yang tersedia di Edeva Clinic Tasikmalaya.",
     },
     "service-detail.html": {
-        title: "Detail Layanan Perawatan Kulit | Klinik Edeva Tasikmalaya",
-        description: "Informasi layanan kecantikan dan perawatan kulit di Klinik Edeva Tasikmalaya.",
+        title: "Detail Layanan Perawatan Kulit | Edeva Clinic Tasikmalaya",
+        description: "Informasi layanan kecantikan dan perawatan kulit di Edeva Clinic Tasikmalaya.",
     },
     "products.html": {
-        title: "Produk Perawatan Kulit | Klinik Edeva Tasikmalaya",
-        description: "Temukan produk perawatan kulit Klinik Edeva Tasikmalaya untuk melengkapi rutinitas skincare Anda.",
+        title: "Produk Perawatan Kulit | Edeva Clinic Tasikmalaya",
+        description: "Temukan produk perawatan kulit Edeva Clinic Tasikmalaya untuk melengkapi rutinitas skincare Anda.",
     },
     "our-clinic.html": {
-        title: "Our Clinic | Klinik Edeva Tasikmalaya",
-        description: "Lihat galeri Klinik Edeva Tasikmalaya.",
+        title: "Our Clinic | Edeva Clinic Tasikmalaya",
+        description: "Lihat galeri Edeva Clinic Tasikmalaya.",
     },
     "appointment.html": {
-        title: "Buat Janji | Klinik Edeva Tasikmalaya",
-        description: "Buat janji untuk layanan kecantikan dan perawatan kulit di Klinik Edeva Tasikmalaya.",
+        title: "Buat Janji | Edeva Clinic Tasikmalaya",
+        description: "Buat janji untuk layanan kecantikan dan perawatan kulit di Edeva Clinic Tasikmalaya.",
     },
     "contact.html": {
-        title: "Kontak dan Lokasi | Klinik Edeva Tasikmalaya",
+        title: "Kontak dan Lokasi | Edeva Clinic Tasikmalaya",
         description:
-            "Hubungi atau kunjungi Klinik Edeva di Tasikmalaya untuk informasi perawatan kulit dan kecantikan.",
+            "Hubungi atau kunjungi Edeva Clinic di Tasikmalaya untuk informasi perawatan kulit dan kecantikan.",
     },
 };
 
@@ -50,8 +50,8 @@ function structuredData() {
     const clinic = {
         "@context": "https://schema.org",
         "@type": "MedicalClinic",
-        name: "Klinik Pratama Edeva",
-        alternateName: "Klinik Edeva",
+        name: "Edeva Clinic",
+        alternateName: "Edeva Clinic Tasikmalaya",
         url: `${siteUrl}/`,
         hasMap: "https://maps.app.goo.gl/kpRPzHzyXc6zh7nU9",
         description: "Klinik kecantikan dan perawatan kulit di Tasikmalaya.",

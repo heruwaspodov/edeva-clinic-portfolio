@@ -2,10 +2,6 @@
     "hosting": {
         "public": "dist",
         "cleanUrls": true,
-        "redirects": [
-            { "source": "/portfolio", "destination": "/our-clinic", "type": 301 },
-            { "source": "/portfolio.html", "destination": "/our-clinic", "type": 301 }
-        ],
         "ignore": [
             "firebase.json",
             ".firebaserc",

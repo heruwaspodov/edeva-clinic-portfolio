@@ -58,6 +58,9 @@
                 color: $accent-2;
             }
         }
+        &.service-links {
+            gap: 10px;
+        }
         &.contact-list {
             gap: 24px;
             .icon {

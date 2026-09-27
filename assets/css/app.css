@@ -29793,6 +29793,10 @@ label.error {
     color: #f5e7ef;
 }
 
+.footer-1 .link-list.service-links {
+    gap: 10px;
+}
+
 .footer-1 .link-list.contact-list {
     gap: 24px;
 }
@@ -30472,25 +30476,97 @@ label.error {
     position: relative;
     border-radius: 24px;
     background: #f2f2f3;
-    padding: 0 60px 35px;
-    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    column-gap: 24px;
+    padding: 30px;
 }
 
 @media (max-width: 1199px) {
     .testimonial-sec .testimonial-card-1 {
-        padding: 0 40px 35px;
+        grid-template-columns: 130px minmax(0, 1fr);
+        padding: 24px;
     }
 }
 
 @media (max-width: 992px) {
     .testimonial-sec .testimonial-card-1 {
-        padding: 0 30px 35px;
+        grid-template-columns: 110px minmax(0, 1fr);
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonial-sec .testimonial-card-1 {
+        grid-template-columns: 1fr;
     }
 }
 
 .testimonial-sec .testimonial-card-1 .quote-icon {
     position: absolute;
-    top: -40px;
+    top: 20px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+}
+
+.testimonial-sec .testimonial-card-1 .quote-icon svg {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.testimonial-sec .testimonial-card-1 .testimonial-image {
+    grid-row: 1/4;
+    width: 100%;
+    height: 220px;
+    border-radius: 16px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .testimonial-sec .testimonial-card-1 .testimonial-image {
+        grid-row: auto;
+        height: 240px;
+    }
+}
+
+.testimonial-sec .testimonial-card-1 > p,
+.testimonial-sec .testimonial-card-1 .testimonial-rating,
+.testimonial-sec .testimonial-card-1 .testimonial-name {
+    grid-column: 2;
+}
+
+@media (max-width: 767px) {
+    .testimonial-sec .testimonial-card-1 > p,
+    .testimonial-sec .testimonial-card-1 .testimonial-rating,
+    .testimonial-sec .testimonial-card-1 .testimonial-name {
+        grid-column: 1;
+    }
+}
+
+.testimonial-sec .testimonial-card-1 > p {
+    align-self: end;
+    padding-right: 44px;
+}
+
+@media (max-width: 767px) {
+    .testimonial-sec .testimonial-card-1 > p {
+        padding-right: 52px;
+    }
+}
+
+.testimonial-sec .testimonial-card-1 .testimonial-rating img {
+    width: 12px;
+    height: 12px;
+    flex: 0 0 12px;
+}
+
+.testimonial-sec .testimonial-card-1 .testimonial-name {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
 }
 
 .testimonial-sec .testimonial-card-2 {

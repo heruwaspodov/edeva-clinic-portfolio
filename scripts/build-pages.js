@@ -27,9 +27,9 @@ const pages = {
         title: "Produk Perawatan Kulit | Klinik Edeva Tasikmalaya",
         description: "Temukan produk perawatan kulit Klinik Edeva Tasikmalaya untuk melengkapi rutinitas skincare Anda.",
     },
-    "portfolio.html": {
-        title: "Galeri Perawatan | Klinik Edeva Tasikmalaya",
-        description: "Lihat galeri layanan dan perawatan di Klinik Edeva Tasikmalaya.",
+    "our-clinic.html": {
+        title: "Our Clinic | Klinik Edeva Tasikmalaya",
+        description: "Lihat galeri Klinik Edeva Tasikmalaya.",
     },
     "appointment.html": {
         title: "Buat Janji | Klinik Edeva Tasikmalaya",

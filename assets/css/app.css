@@ -31151,6 +31151,37 @@ label.error {
     stroke: #A96480;
 }
 
+.products-sec .blog-card .card-img {
+    display: block;
+    height: 320px;
+    background-color: #f8f4f6;
+}
+
+.products-sec .blog-card .card-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.products-sec .blog-card .card-content .title {
+    margin-bottom: 12px;
+}
+
+.products-sec .blog-card .card-content .product-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    min-height: 4.5em;
+    overflow: hidden;
+    margin-bottom: 0;
+    color: #6a6a6a;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 .blog-detail .detail-content {
     font-weight: 400;
 }

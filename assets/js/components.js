@@ -41,6 +41,26 @@
             });
         })
         .then(function () {
+            if (!document.querySelector("[data-product-list]")) {
+                return;
+            }
+
+            return new Promise(function (resolve, reject) {
+                var productsScript = document.createElement("script");
+                productsScript.src = "/assets/js/products.js";
+                productsScript.onload = function () {
+                    window.EdevaProducts.init().then(resolve, reject);
+                };
+                productsScript.onerror = function () {
+                    document.querySelectorAll("[data-product-list]").forEach(function (target) {
+                        target.textContent = "Produk belum dapat dimuat. Silakan coba lagi.";
+                    });
+                    resolve();
+                };
+                document.body.appendChild(productsScript);
+            });
+        })
+        .then(function () {
             var appScript = document.createElement("script");
             appScript.src = "/assets/js/app.js";
             document.body.appendChild(appScript);

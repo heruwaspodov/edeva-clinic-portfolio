@@ -1,0 +1,107 @@
+[
+    {
+        "name": "GSFW",
+        "image": "assets/media/products/gsfw.png",
+        "description": "Pembersih wajah lembut untuk membantu mengangkat kotoran dan minyak."
+    },
+    {
+        "name": "LNC",
+        "image": "assets/media/products/lnc.png",
+        "description": "Krim malam untuk membantu mencerahkan kulit kusam dan menyamarkan noda."
+    },
+    {
+        "name": "HFT",
+        "image": "assets/media/products/hft.png",
+        "description": "Toner wajah untuk membantu menyegarkan kulit."
+    },
+    {
+        "name": "SPBL",
+        "image": "assets/media/products/spbl.png",
+        "description": "Losion tubuh untuk membantu melembapkan dan merawat kulit."
+    },
+    {
+        "name": "LLC",
+        "image": "assets/media/products/llc.png",
+        "description": "Krim ringan untuk membantu mencerahkan kulit wajah."
+    },
+    {
+        "name": "LBL",
+        "image": "assets/media/products/lbl.png",
+        "description": "Losion tubuh untuk membantu merawat dan melembapkan kulit."
+    },
+    {
+        "name": "BGS",
+        "image": "assets/media/products/bgs.png",
+        "description": "Serum untuk membantu mencerahkan kulit dan menyamarkan noda hitam."
+    },
+    {
+        "name": "AG",
+        "image": "assets/media/products/ag.png",
+        "description": "Krim perawatan untuk kulit wajah berjerawat."
+    },
+    {
+        "name": "DCP",
+        "image": "assets/media/products/dcp.png",
+        "description": "Krim siang untuk membantu menjaga kelembapan kulit."
+    },
+    {
+        "name": "SG49++",
+        "image": "assets/media/products/sg49-plus-plus.png",
+        "description": "Pelindung wajah dari paparan sinar matahari dengan SPF 49 PA+++."
+    },
+    {
+        "name": "MDC",
+        "image": "assets/media/products/mdc.png",
+        "description": "Krim siang pelembap untuk membantu menjaga kulit tetap halus."
+    },
+    {
+        "name": "SPG",
+        "image": "assets/media/products/spg.png",
+        "description": "Gel untuk membantu melindungi kulit wajah dari sinar matahari."
+    },
+    {
+        "name": "ROC",
+        "image": "assets/media/products/roc.png",
+        "description": "Krim malam dengan retinol untuk perawatan kulit wajah."
+    },
+    {
+        "name": "AS",
+        "image": "assets/media/products/as.png",
+        "description": "Serum untuk perawatan kulit wajah berjerawat."
+    },
+    {
+        "name": "BFS",
+        "image": "assets/media/products/bfs.png",
+        "description": "Serum untuk membantu mencerahkan kulit wajah."
+    },
+    {
+        "name": "ACNE GEL",
+        "image": "assets/media/products/acne-gel.png",
+        "description": "Gel untuk perawatan kulit berjerawat dan bekas jerawat."
+    },
+    {
+        "name": "AGNC",
+        "image": "assets/media/products/agnc.png",
+        "description": "Krim malam untuk membantu mencerahkan kulit wajah."
+    },
+    {
+        "name": "ACFW",
+        "image": "assets/media/products/acfw.png",
+        "description": "Pembersih wajah untuk kulit berjerawat, membantu mengangkat kotoran dan minyak."
+    },
+    {
+        "name": "PCS",
+        "image": "assets/media/products/pcs.png",
+        "description": "Serum untuk perawatan kulit yang cenderung berminyak dan berpori besar."
+    },
+    {
+        "name": "SPB",
+        "image": "assets/media/products/spb.png",
+        "description": "Perawatan wajah untuk membantu melindungi dari sinar matahari."
+    },
+    {
+        "name": "LN",
+        "image": "assets/media/products/ln.png",
+        "description": "Krim malam untuk membantu mencerahkan kulit wajah."
+    }
+]

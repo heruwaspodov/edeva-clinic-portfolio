@@ -10,6 +10,7 @@
     function renderProducts(products) {
         document.querySelectorAll("[data-product-list]").forEach(function (list) {
             var cards = document.createDocumentFragment();
+            var slider = list.dataset.productList === "slider";
 
             products.forEach(function (product) {
                 if (
@@ -22,7 +23,7 @@
                 }
 
                 var column = document.createElement("div");
-                column.className = "col-lg-4 col-md-6 col-12";
+                column.className = slider ? "product-slide" : "col-lg-4 col-md-6 col-12";
 
                 var card = document.createElement("div");
                 card.className = "blog-card";
@@ -43,14 +44,16 @@
                 content.className = "card-content";
 
                 var title = document.createElement("h2");
-                title.className = "h4 title ui-mb-20";
+                title.className = slider ? "h4 title" : "h4 title ui-mb-20";
                 title.textContent = product.name;
                 content.appendChild(title);
 
-                var description = document.createElement("p");
-                description.className = "product-description";
-                description.textContent = product.description;
-                content.appendChild(description);
+                if (!slider) {
+                    var description = document.createElement("p");
+                    description.className = "product-description";
+                    description.textContent = product.description;
+                    content.appendChild(description);
+                }
 
                 card.appendChild(imageArea);
                 card.appendChild(content);

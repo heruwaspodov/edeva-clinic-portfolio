@@ -241,6 +241,54 @@ var MyScroll = "";
                 $servicesSlider.on("afterChange reInit", updateServicesPagination);
                 updateServicesPagination(null, null, $servicesSlider.slick("slickCurrentSlide"));
             }
+            if ($(".products-slider").length) {
+                const $productsSlider = $(".products-slider");
+                $productsSlider.slick({
+                    autoplay: false,
+                    speed: 900,
+                    arrows: false,
+                    swipe: true,
+                    draggable: true,
+                    dots: false,
+                    slidesToShow: 4,
+                    pauseOnFocus: false,
+                    pauseOnHover: false,
+                    responsive: [
+                        { breakpoint: 1399, settings: { slidesToShow: 3 } },
+                        { breakpoint: 999, settings: { slidesToShow: 2 } },
+                        { breakpoint: 767, settings: { slidesToShow: 1 } },
+                    ],
+                });
+
+                const $productsPagination = $productsSlider.closest(".slider-block").find(".products-pagination");
+                const productCount = $productsSlider.slick("getSlick").slideCount;
+                const pageCount = Math.min(4, productCount);
+                const pageSize = Math.ceil(productCount / pageCount);
+
+                for (let page = 0; page < pageCount; page++) {
+                    const start = page * pageSize + 1;
+                    const end = Math.min((page + 1) * pageSize, productCount);
+                    const $button = $("<button>", {
+                        type: "button",
+                        "aria-label": `Produk ${start} sampai ${end}`,
+                    }).on("click", function () {
+                        $productsSlider.slick("slickGoTo", page * pageSize);
+                    });
+                    $productsPagination.append($("<li>").append($button));
+                }
+
+                function updateProductsPagination(_, slick, currentSlide) {
+                    const activePage = Math.min(pageCount - 1, Math.floor((currentSlide || 0) / pageSize));
+                    $productsPagination.children().each(function (page) {
+                        const active = page === activePage;
+                        $(this).toggleClass("slick-active", active);
+                        $(this).find("button").attr("aria-pressed", active);
+                    });
+                }
+
+                $productsSlider.on("afterChange reInit", updateProductsPagination);
+                updateProductsPagination(null, null, $productsSlider.slick("slickCurrentSlide"));
+            }
             if ($(".services-slider-2").length) {
                 $(".services-slider-2").slick({
                     autoplay: !1,

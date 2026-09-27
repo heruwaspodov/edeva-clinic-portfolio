@@ -34,11 +34,15 @@
             '" loading="lazy" />' +
             '<span class="overlay"></span>' +
             '<span class="content d-flex align-items-end ui-gap-20">' +
-            '<span class="text-block"><span class="h4 white ui-mb-10 service-card-title">' +
+            '<span class="text-block"><span class="h4 white service-card-title' +
+            (grid ? ' ui-mb-10' : '') +
+            '">' +
             escapeHtml(service.name) +
-            '</span><span class="white service-card-description">' +
-            escapeHtml(service.description) +
-            '</span></span><span class="link-btn">' +
+            '</span>' +
+            (grid
+                ? '<span class="white service-card-description">' + escapeHtml(service.description) + '</span>'
+                : '') +
+            '</span><span class="link-btn">' +
             arrow +
             "</span></span>";
 

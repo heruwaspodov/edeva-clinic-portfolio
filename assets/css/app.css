@@ -30550,6 +30550,20 @@ label.error {
     min-height: 4.5em;
 }
 
+.services-sec .services-slider .service-card-title {
+    min-height: 0;
+    margin-bottom: 0;
+    -webkit-line-clamp: 4;
+}
+
+.services-sec .services-slider .service-card .content {
+    justify-content: space-between;
+}
+
+.services-sec .services-slider .service-card .link-btn {
+    flex: 0 0 38px;
+}
+
 .services-sec .services-pagination li button {
     width: 100%;
     height: 100%;

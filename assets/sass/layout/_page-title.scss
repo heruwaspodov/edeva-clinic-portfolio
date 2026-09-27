@@ -55,3 +55,31 @@
         }
     }
 }
+
+.page-title.service-detail-title .content .breadcrumb {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    max-width: 100%;
+    height: auto;
+    min-height: 40px;
+    padding: 8px 20px;
+    color: $white;
+
+    li span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: $white;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            flex-shrink: 0;
+            background: $white;
+            border-radius: 50%;
+        }
+    }
+}

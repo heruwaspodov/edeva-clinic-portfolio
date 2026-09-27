@@ -35,13 +35,13 @@
             '<span class="overlay"></span>' +
             '<span class="content d-flex align-items-end ui-gap-20">' +
             '<span class="text-block"><span class="h4 white service-card-title' +
-            (grid ? ' ui-mb-10' : '') +
+            (grid ? " ui-mb-10" : "") +
             '">' +
             escapeHtml(service.name) +
-            '</span>' +
+            "</span>" +
             (grid
-                ? '<span class="white service-card-description">' + escapeHtml(service.description) + '</span>'
-                : '') +
+                ? '<span class="white service-card-description">' + escapeHtml(service.description) + "</span>"
+                : "") +
             '</span><span class="link-btn">' +
             arrow +
             "</span></span>";
@@ -102,23 +102,27 @@
         });
     }
 
-    function renderGallery(service, container) {
+    function renderGallery(service, container, heroSource, unavailableSource) {
         if (!Array.isArray(service.images)) return;
 
         Promise.all(
-            service.images.map(function (source, index) {
-                return new Promise(function (resolve) {
-                    var image = new Image();
-                    image.alt = "Foto " + service.name + " " + (index + 1);
-                    image.onload = function () {
-                        resolve(image);
-                    };
-                    image.onerror = function () {
-                        resolve(null);
-                    };
-                    image.src = "/" + source;
-                });
-            })
+            service.images
+                .filter(function (source) {
+                    return source !== heroSource && source !== unavailableSource;
+                })
+                .map(function (source, index) {
+                    return new Promise(function (resolve) {
+                        var image = new Image();
+                        image.alt = "Foto " + service.name + " " + (index + 1);
+                        image.onload = function () {
+                            resolve(image);
+                        };
+                        image.onerror = function () {
+                            resolve(null);
+                        };
+                        image.src = "/" + source;
+                    });
+                }),
         ).then(function (images) {
             images.forEach(function (image) {
                 if (!image) return;
@@ -158,20 +162,27 @@
         breadcrumb.textContent = service.name;
         setMetadata(service);
 
-        var related = Array.from({ length: Math.min(5, services.length - 1) }, function (_, offset) {
-            return services[(index + offset + 1) % services.length];
-        })
+        var related = services
             .map(function (item) {
-                return '<li><a href="' + detailUrl(item) + '">' + escapeHtml(item.name) + "</a></li>";
+                var current = item.slug === service.slug;
+                return (
+                    '<li><a href="' +
+                    detailUrl(item) +
+                    '"' +
+                    (current ? ' aria-current="page"' : "") +
+                    "><span>" +
+                    escapeHtml(item.name) +
+                    "</span>" +
+                    arrow +
+                    "</a></li>"
+                );
             })
             .join("");
 
         container.innerHTML =
             '<div class="row row-gap-30">' +
             '<div class="col-lg-8"><div class="detail-content">' +
-            '<img class="ui-mb-55 main-img service-detail-image" src="/' +
-            escapeHtml(service.image) +
-            '" alt="Ilustrasi layanan ' +
+            '<img class="ui-mb-55 main-img service-detail-image" alt="Ilustrasi layanan ' +
             escapeHtml(service.name) +
             '" />' +
             '<h2 class="ui-mb-30">' +
@@ -188,13 +199,37 @@
             bookingUrl +
             '" target="_blank" rel="noopener noreferrer">Konsultasi dan Booking</a>' +
             "</div></div>" +
-            '<aside class="col-lg-4"><h3 class="ui-mb-30">Layanan lainnya</h3>' +
+            '<aside class="col-lg-4"><div class="service-related"><h3>Services</h3>' +
             '<ul class="unstyled service-related-list">' +
             related +
-            '</ul><a href="/services">Lihat semua layanan</a></aside>' +
+            "</ul></div></aside>" +
             "</div>";
 
-        renderGallery(service, container.querySelector("[data-service-gallery]"));
+        var mainImage = container.querySelector(".service-detail-image");
+        var relatedPanel = container.querySelector(".service-related");
+        var gallery = container.querySelector("[data-service-gallery]");
+        var preferredSource = service.image.replace(/image-0\.webp$/, "image-1.webp");
+        var unavailableSource = null;
+        function syncRelatedHeight() {
+            relatedPanel.style.height = mainImage.getBoundingClientRect().height + "px";
+        }
+        syncRelatedHeight();
+        if (typeof ResizeObserver !== "undefined") {
+            new ResizeObserver(syncRelatedHeight).observe(mainImage);
+        } else {
+            window.addEventListener("resize", syncRelatedHeight);
+        }
+        mainImage.onload = function () {
+            syncRelatedHeight();
+            renderGallery(service, gallery, mainImage.getAttribute("src").slice(1), unavailableSource);
+        };
+        mainImage.onerror = function () {
+            if (mainImage.getAttribute("src") !== "/" + service.image) {
+                unavailableSource = preferredSource;
+                mainImage.src = "/" + service.image;
+            }
+        };
+        mainImage.src = "/" + preferredSource;
     }
 
     function showLoadError() {

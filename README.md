@@ -26,8 +26,8 @@ dist/                Generated deployment output
 
 Data layanan berada di `assets/data/services.json`. Setiap layanan memiliki folder
 `assets/media/services/<slug>/` dengan nama file tetap: `image-0.webp` untuk kartu
-dan gambar utama detail, lalu `image-1.webp` sampai `image-3.webp` untuk galeri
-detail. File galeri yang belum tersedia otomatis disembunyikan. Ringkasan kartu
+dan cadangan gambar utama detail. Gambar utama memakai `image-1.webp` bila tersedia;
+gambar lain ditampilkan di galeri. File galeri yang belum tersedia otomatis disembunyikan. Ringkasan kartu
 berasal dari `description`, sedangkan teks detail berasal dari `long_description`.
 Tautan detail memakai `/service-detail.html?service=<slug>`. Ukuran tampilan
 gambar diatur di CSS agar foto dengan dimensi berbeda tetap seragam.

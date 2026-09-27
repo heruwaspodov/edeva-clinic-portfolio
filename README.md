@@ -24,11 +24,13 @@ scripts/build-pages.js  Static page builder and SEO metadata renderer
 dist/                Generated deployment output
 ```
 
-Untuk mengubah nama, gambar, atau ringkasan layanan, edit entri `slug`, `name`,
-`image`, dan `description` di `assets/data/services.json`. Tautan detail memakai
-`/service-detail.html?service=<slug>`. Beberapa layanan saat ini berbagi foto
-ilustrasi dari `assets/media/services/`; ganti jalur `image` per entri bila
-foto khususnya sudah tersedia.
+Data layanan berada di `assets/data/services.json`. Setiap layanan memiliki folder
+`assets/media/services/<slug>/` dengan nama file tetap: `image-0.webp` untuk kartu
+dan gambar utama detail, lalu `image-1.webp` sampai `image-3.webp` untuk galeri
+detail. File galeri yang belum tersedia otomatis disembunyikan. Ringkasan kartu
+berasal dari `description`, sedangkan teks detail berasal dari `long_description`.
+Tautan detail memakai `/service-detail.html?service=<slug>`. Ukuran tampilan
+gambar diatur di CSS agar foto dengan dimensi berbeda tetap seragam.
 
 ## Menjalankan secara lokal
 

@@ -107,8 +107,11 @@
             overflow: hidden;
         }
 
-        img {
+        > img {
             width: 100%;
+            aspect-ratio: 495 / 780;
+            object-fit: cover;
+            display: block;
         }
 
         .content {

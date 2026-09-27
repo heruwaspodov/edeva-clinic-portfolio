@@ -102,6 +102,34 @@
         });
     }
 
+    function renderGallery(service, container) {
+        if (!Array.isArray(service.images)) return;
+
+        Promise.all(
+            service.images.map(function (source, index) {
+                return new Promise(function (resolve) {
+                    var image = new Image();
+                    image.alt = "Foto " + service.name + " " + (index + 1);
+                    image.onload = function () {
+                        resolve(image);
+                    };
+                    image.onerror = function () {
+                        resolve(null);
+                    };
+                    image.src = "/" + source;
+                });
+            })
+        ).then(function (images) {
+            images.forEach(function (image) {
+                if (!image) return;
+                var item = document.createElement("div");
+                item.className = "service-detail-gallery-item";
+                item.appendChild(image);
+                container.appendChild(item);
+            });
+        });
+    }
+
     function renderDetail(services) {
         var container = document.querySelector("[data-service-detail]");
         if (!container) return;
@@ -152,7 +180,10 @@
             '<p class="ui-mb-35">' +
             escapeHtml(service.description) +
             "</p>" +
-            '<p class="ui-mb-35">Setiap perawatan diawali dengan konsultasi agar pilihan layanan sesuai dengan kondisi dan kebutuhan Anda. Hubungi tim Klinik Edeva untuk informasi proses, jadwal, dan biaya.</p>' +
+            '<p class="ui-mb-35">' +
+            escapeHtml(service.long_description) +
+            "</p>" +
+            '<div class="service-detail-gallery ui-mb-35" data-service-gallery></div>' +
             '<a class="cus-btn" href="' +
             bookingUrl +
             '" target="_blank" rel="noopener noreferrer">Konsultasi dan Booking</a>' +
@@ -162,6 +193,8 @@
             related +
             '</ul><a href="/services">Lihat semua layanan</a></aside>' +
             "</div>";
+
+        renderGallery(service, container.querySelector("[data-service-gallery]"));
     }
 
     function showLoadError() {

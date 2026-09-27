@@ -30570,8 +30570,11 @@ label.error {
     cursor: pointer;
 }
 
-.services-sec .service-card img {
+.services-sec .service-card > img {
     width: 100%;
+    aspect-ratio: 495 / 780;
+    object-fit: cover;
+    display: block;
 }
 
 .services-sec .service-card .content {
@@ -30701,9 +30704,42 @@ label.error {
 }
 
 .service-detail .service-detail-image {
+    display: block;
     width: 100%;
-    max-height: 620px;
-    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background: #f7f4f6;
+}
+
+.service-detail .service-detail-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.service-detail .service-detail-gallery:empty {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .service-detail .service-detail-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575px) {
+    .service-detail .service-detail-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+.service-detail .service-detail-gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    border-radius: 16px;
+    background: #f7f4f6;
 }
 
 .service-detail .service-related-list li {

@@ -2,145 +2,230 @@
     {
         "slug": "facial-vitamin-c",
         "name": "Facial Vitamin C",
-        "image": "assets/media/services/service-2.png",
-        "description": "Facial dengan pilihan Vitamin C untuk melengkapi perawatan kulit Anda."
+        "image": "assets/media/services/facial-vitamin-c/image-0.webp",
+        "description": "Facial dengan pilihan Vitamin C untuk melengkapi perawatan kulit Anda.",
+        "long_description": "Facial Vitamin C adalah pilihan perawatan wajah dengan tambahan Vitamin C dalam rangkaian facial. Tim Klinik Edeva akan menilai kondisi kulit terlebih dahulu agar tahapan perawatan sesuai dengan kebutuhan Anda.",
+        "images": [
+            "assets/media/services/facial-vitamin-c/image-0.webp",
+            "assets/media/services/facial-vitamin-c/image-1.webp"
+        ]
     },
     {
         "slug": "facial-tea-tree-oil",
         "name": "Facial Tea Tree Oil",
-        "image": "assets/media/services/service-7.png",
-        "description": "Facial dengan pilihan Tea Tree Oil sesuai kebutuhan kulit Anda."
+        "image": "assets/media/services/facial-tea-tree-oil/image-0.webp",
+        "description": "Facial dengan pilihan Tea Tree Oil sesuai kebutuhan kulit Anda.",
+        "long_description": "Facial Tea Tree Oil memadukan rangkaian facial dengan pilihan Tea Tree Oil. Sebelum perawatan, tim klinik akan membantu menentukan apakah pilihan ini sesuai dengan kondisi dan kenyamanan kulit Anda.",
+        "images": [
+            "assets/media/services/facial-tea-tree-oil/image-0.webp",
+            "assets/media/services/facial-tea-tree-oil/image-1.webp"
+        ]
     },
     {
         "slug": "acne-injection",
         "name": "Acne Injection",
-        "image": "assets/media/services/service-1.png",
-        "description": "Layanan acne injection yang diawali dengan penilaian kondisi kulit."
+        "image": "assets/media/services/acne-injection/image-0.webp",
+        "description": "Layanan acne injection yang diawali dengan penilaian kondisi kulit.",
+        "long_description": "Acne Injection merupakan pilihan tindakan untuk kondisi jerawat tertentu setelah pemeriksaan langsung. Dokter akan menilai jenis jerawat, kecocokan tindakan, serta menjelaskan proses dan perawatan setelahnya.",
+        "images": [
+            "assets/media/services/acne-injection/image-0.webp",
+            "assets/media/services/acne-injection/image-1.webp"
+        ]
     },
     {
         "slug": "detox-skin-facial",
         "name": "Detox Skin Facial",
-        "image": "assets/media/services/service-7.png",
-        "description": "Pilihan facial untuk rutinitas perawatan kulit yang lebih menyeluruh."
+        "image": "assets/media/services/detox-skin-facial/image-0.webp",
+        "description": "Pilihan facial untuk rutinitas perawatan kulit yang lebih menyeluruh.",
+        "long_description": "Detox Skin Facial adalah pilihan facial untuk melengkapi rutinitas perawatan kulit. Tahapan layanan disesuaikan setelah tim klinik melihat kondisi wajah dan mendiskusikan kebutuhan Anda.",
+        "images": [
+            "assets/media/services/detox-skin-facial/image-0.webp",
+            "assets/media/services/detox-skin-facial/image-1.webp"
+        ]
     },
     {
         "slug": "facial-gold-mask",
         "name": "Facial Gold Mask",
-        "image": "assets/media/services/service-7.png",
-        "description": "Facial dengan pilihan masker gold sebagai bagian dari perawatan."
+        "image": "assets/media/services/facial-gold-mask/image-0.webp",
+        "description": "Facial dengan pilihan masker gold sebagai bagian dari perawatan.",
+        "long_description": "Facial Gold Mask menghadirkan pilihan masker gold sebagai bagian dari rangkaian facial. Tim klinik akan menyesuaikan perawatan dengan kondisi kulit dan preferensi Anda saat konsultasi.",
+        "images": [
+            "assets/media/services/facial-gold-mask/image-0.webp",
+            "assets/media/services/facial-gold-mask/image-1.webp"
+        ]
     },
     {
         "slug": "facial-black-gold",
         "name": "Facial Black Gold",
-        "image": "assets/media/services/service-7.png",
-        "description": "Pilihan facial Black Gold di Klinik Edeva."
+        "image": "assets/media/services/facial-black-gold/image-0.webp",
+        "description": "Pilihan facial Black Gold di Klinik Edeva.",
+        "long_description": "Facial Black Gold adalah salah satu pilihan perawatan wajah di Klinik Edeva. Konsultasi sebelum facial membantu tim menentukan tahapan yang sesuai dengan kebutuhan kulit Anda.",
+        "images": [
+            "assets/media/services/facial-black-gold/image-0.webp",
+            "assets/media/services/facial-black-gold/image-1.webp"
+        ]
     },
     {
         "slug": "biolifting",
         "name": "Biolifting",
-        "image": "assets/media/services/service-2.png",
-        "description": "Konsultasikan pilihan Biolifting sesuai kondisi dan tujuan perawatan Anda."
+        "image": "assets/media/services/biolifting/image-0.webp",
+        "description": "Konsultasikan pilihan Biolifting sesuai kondisi dan tujuan perawatan Anda.",
+        "long_description": "Biolifting dapat dipertimbangkan sebagai bagian dari rencana perawatan estetika Anda. Tim klinik akan menjelaskan proses, kecocokan, dan hasil yang realistis berdasarkan kondisi kulit saat konsultasi.",
+        "images": ["assets/media/services/biolifting/image-0.webp", "assets/media/services/biolifting/image-1.webp"]
     },
     {
         "slug": "eye-treatment",
         "name": "Eye Treatment",
-        "image": "assets/media/services/service-2.png",
-        "description": "Perawatan untuk area sekitar mata yang disesuaikan dengan kebutuhan Anda."
+        "image": "assets/media/services/eye-treatment/image-0.webp",
+        "description": "Perawatan untuk area sekitar mata yang disesuaikan dengan kebutuhan Anda.",
+        "long_description": "Eye Treatment berfokus pada kebutuhan perawatan area sekitar mata. Karena area ini sensitif, tim klinik akan menilai kondisi kulit terlebih dahulu dan menjelaskan pilihan perawatan yang sesuai.",
+        "images": [
+            "assets/media/services/eye-treatment/image-0.webp",
+            "assets/media/services/eye-treatment/image-1.webp"
+        ]
     },
     {
         "slug": "diamond-peel",
         "name": "Diamond Peel",
-        "image": "assets/media/services/service-2.png",
-        "description": "Pilihan perawatan Diamond Peel untuk kulit wajah."
+        "image": "assets/media/services/diamond-peel/image-0.webp",
+        "description": "Pilihan perawatan Diamond Peel untuk kulit wajah.",
+        "long_description": "Diamond Peel adalah pilihan perawatan untuk permukaan kulit wajah. Tim klinik akan menilai kondisi kulit dan menjelaskan tahapan, kenyamanan, serta perawatan setelah tindakan sebelum memulai.",
+        "images": ["assets/media/services/diamond-peel/image-0.webp", "assets/media/services/diamond-peel/image-1.webp"]
     },
     {
         "slug": "hydra-peel",
         "name": "Hydra Peel",
-        "image": "assets/media/services/service-2.png",
-        "description": "Pilihan perawatan Hydra Peel untuk kulit wajah."
+        "image": "assets/media/services/hydra-peel/image-0.webp",
+        "description": "Pilihan perawatan Hydra Peel untuk kulit wajah.",
+        "long_description": "Hydra Peel merupakan salah satu pilihan perawatan kulit wajah di Klinik Edeva. Sebelum tindakan, tim akan mendiskusikan kebutuhan kulit Anda dan menyesuaikan rangkaian perawatan.",
+        "images": ["assets/media/services/hydra-peel/image-0.webp", "assets/media/services/hydra-peel/image-1.webp"]
     },
     {
         "slug": "facial-whitening-peel",
         "name": "Facial Whitening Peel",
-        "image": "assets/media/services/service-7.png",
-        "description": "Facial dengan pilihan Whitening Peel sesuai kondisi kulit Anda."
+        "image": "assets/media/services/facial-whitening-peel/image-0.webp",
+        "description": "Facial dengan pilihan Whitening Peel sesuai kondisi kulit Anda.",
+        "long_description": "Facial Whitening Peel adalah pilihan facial dengan tahapan peeling yang disesuaikan dengan kondisi kulit. Tim klinik akan menjelaskan kecocokan, proses, dan perawatan setelahnya saat konsultasi.",
+        "images": [
+            "assets/media/services/facial-whitening-peel/image-0.webp",
+            "assets/media/services/facial-whitening-peel/image-1.webp"
+        ]
     },
     {
         "slug": "facial-clay-mask",
         "name": "Facial Clay Mask",
-        "image": "assets/media/services/service-7.png",
-        "description": "Facial dengan pilihan masker clay sebagai bagian dari perawatan."
+        "image": "assets/media/services/facial-clay-mask/image-0.webp",
+        "description": "Facial dengan pilihan masker clay sebagai bagian dari perawatan.",
+        "long_description": "Facial Clay Mask menggunakan pilihan masker clay dalam rangkaian perawatan wajah. Tim klinik akan menilai kondisi kulit dan menyesuaikan tahapan facial agar perawatan terasa nyaman.",
+        "images": [
+            "assets/media/services/facial-clay-mask/image-0.webp",
+            "assets/media/services/facial-clay-mask/image-1.webp"
+        ]
     },
     {
         "slug": "facial-pearl-mask",
         "name": "Facial Pearl Mask",
-        "image": "assets/media/services/service-7.png",
-        "description": "Facial dengan pilihan masker pearl sebagai bagian dari perawatan."
+        "image": "assets/media/services/facial-pearl-mask/image-0.webp",
+        "description": "Facial dengan pilihan masker pearl sebagai bagian dari perawatan.",
+        "long_description": "Facial Pearl Mask menawarkan pilihan masker pearl sebagai bagian dari rangkaian facial. Konsultasikan kondisi kulit Anda agar tim klinik dapat menyarankan tahapan perawatan yang sesuai.",
+        "images": [
+            "assets/media/services/facial-pearl-mask/image-0.webp",
+            "assets/media/services/facial-pearl-mask/image-1.webp"
+        ]
     },
     {
         "slug": "oxy",
         "name": "Oxy",
-        "image": "assets/media/services/service-2.png",
-        "description": "Konsultasikan pilihan perawatan Oxy sesuai kebutuhan kulit Anda."
+        "image": "assets/media/services/oxy/image-0.webp",
+        "description": "Konsultasikan pilihan perawatan Oxy sesuai kebutuhan kulit Anda.",
+        "long_description": "Oxy merupakan salah satu pilihan layanan perawatan kulit di Klinik Edeva. Tim klinik akan menjelaskan proses dan menilai kesesuaiannya dengan kebutuhan kulit Anda sebelum perawatan.",
+        "images": ["assets/media/services/oxy/image-0.webp", "assets/media/services/oxy/image-1.webp"]
     },
     {
         "slug": "rejuvenation",
         "name": "Rejuvenation",
-        "image": "assets/media/services/service-2.png",
-        "description": "Pilihan perawatan Rejuvenation yang disesuaikan dengan kondisi kulit."
+        "image": "assets/media/services/rejuvenation/image-0.webp",
+        "description": "Pilihan perawatan Rejuvenation yang disesuaikan dengan kondisi kulit.",
+        "long_description": "Rejuvenation adalah pilihan perawatan estetika yang perlu disesuaikan dengan kondisi kulit dan tujuan Anda. Konsultasi membantu menentukan pendekatan serta ekspektasi hasil yang realistis.",
+        "images": ["assets/media/services/rejuvenation/image-0.webp", "assets/media/services/rejuvenation/image-1.webp"]
     },
     {
         "slug": "botox",
         "name": "Botox",
-        "image": "assets/media/services/service-1.png",
-        "description": "Konsultasikan layanan Botox dan tujuan perawatan Anda bersama tim klinik."
+        "image": "assets/media/services/botox/image-0.webp",
+        "description": "Konsultasikan layanan Botox dan tujuan perawatan Anda bersama tim klinik.",
+        "long_description": "Botox adalah tindakan injeksi yang dapat dipertimbangkan untuk tujuan estetika tertentu. Dokter akan membahas area tindakan, kecocokan, kemungkinan efek samping, dan hasil yang realistis sebelum prosedur.",
+        "images": ["assets/media/services/botox/image-0.webp", "assets/media/services/botox/image-1.webp"]
     },
     {
         "slug": "chin-filler",
         "name": "Chin Filler",
-        "image": "assets/media/services/service-1.png",
-        "description": "Konsultasikan pilihan Chin Filler sesuai kondisi dan tujuan perawatan."
-    },
-    {
-        "slug": "nose-filler",
-        "name": "Nose Filler",
-        "image": "assets/media/services/service-1.png",
-        "description": "Konsultasikan pilihan Nose Filler sesuai kondisi dan tujuan perawatan."
+        "image": "assets/media/services/chin-filler/image-0.webp",
+        "description": "Konsultasikan pilihan Chin Filler sesuai kondisi dan tujuan perawatan.",
+        "long_description": "Chin Filler adalah pilihan tindakan estetika pada area dagu. Dokter akan menilai anatomi dan kondisi kesehatan Anda, lalu menjelaskan pilihan tindakan, risiko, dan hasil yang realistis.",
+        "images": ["assets/media/services/chin-filler/image-0.webp", "assets/media/services/chin-filler/image-1.webp"]
     },
     {
         "slug": "photodynamic-therapy-pdt",
         "name": "Photodynamic therapy (PDT)",
-        "image": "assets/media/services/service-1.png",
-        "description": "Konsultasikan pilihan Photodynamic Therapy (PDT) bersama tim klinik."
+        "image": "assets/media/services/photodynamic-therapy-pdt/image-0.webp",
+        "description": "Konsultasikan pilihan Photodynamic Therapy (PDT) bersama tim klinik.",
+        "long_description": "Photodynamic Therapy (PDT) merupakan pilihan perawatan berbasis cahaya dengan tahapan yang disesuaikan dengan kondisi kulit. Dokter akan menilai kecocokan layanan dan menjelaskan persiapan serta tindak lanjutnya.",
+        "images": [
+            "assets/media/services/photodynamic-therapy-pdt/image-0.webp",
+            "assets/media/services/photodynamic-therapy-pdt/image-1.webp"
+        ]
     },
     {
         "slug": "skin-booster",
         "name": "Skin Booster",
-        "image": "assets/media/services/service-5.png",
-        "description": "Konsultasikan pilihan Skin Booster sesuai kebutuhan kulit Anda."
+        "image": "assets/media/services/skin-booster/image-0.webp",
+        "description": "Konsultasikan pilihan Skin Booster sesuai kebutuhan kulit Anda.",
+        "long_description": "Skin Booster merupakan pilihan perawatan estetika kulit yang perlu disesuaikan dengan kebutuhan Anda. Tim klinik akan menjelaskan proses, kecocokan, dan hal yang perlu diperhatikan setelah tindakan.",
+        "images": ["assets/media/services/skin-booster/image-0.webp", "assets/media/services/skin-booster/image-1.webp"]
     },
     {
         "slug": "radio-frequency-slimming",
         "name": "Radio Frequency (Slimming)",
-        "image": "assets/media/services/service-8.png",
-        "description": "Konsultasikan pilihan Radio Frequency (Slimming) sesuai tujuan Anda."
+        "image": "assets/media/services/radio-frequency-slimming/image-0.webp",
+        "description": "Konsultasikan pilihan Radio Frequency (Slimming) sesuai tujuan Anda.",
+        "long_description": "Radio Frequency (Slimming) adalah pilihan perawatan menggunakan teknologi radio frequency untuk tujuan estetika tubuh. Tim klinik akan menilai area dan tujuan perawatan, lalu membahas proses serta hasil yang realistis.",
+        "images": [
+            "assets/media/services/radio-frequency-slimming/image-0.webp",
+            "assets/media/services/radio-frequency-slimming/image-1.webp"
+        ]
     },
     {
         "slug": "intense-pulse-light-ipl-hair-removal-ketiak",
         "name": "Intense Pulse Light (IPL) Hair Removal Ketiak",
-        "image": "assets/media/services/service-1.png",
-        "description": "Layanan IPL hair removal untuk area ketiak."
+        "image": "assets/media/services/intense-pulse-light-ipl-hair-removal-ketiak/image-0.webp",
+        "description": "Layanan IPL hair removal untuk area ketiak.",
+        "long_description": "IPL Hair Removal Ketiak menggunakan teknologi cahaya sebagai pilihan untuk mengurangi rambut di area ketiak. Tim klinik akan menilai kondisi kulit dan rambut, lalu menjelaskan persiapan serta kemungkinan kebutuhan beberapa sesi.",
+        "images": [
+            "assets/media/services/intense-pulse-light-ipl-hair-removal-ketiak/image-0.webp",
+            "assets/media/services/intense-pulse-light-ipl-hair-removal-ketiak/image-1.webp"
+        ]
     },
     {
         "slug": "intense-pulse-light-ipl-hair-removal-kaki",
         "name": "Intense Pulse Light (IPL) Hair Removal Kaki",
-        "image": "assets/media/services/service-1.png",
-        "description": "Layanan IPL hair removal untuk area kaki."
+        "image": "assets/media/services/intense-pulse-light-ipl-hair-removal-kaki/image-0.webp",
+        "description": "Layanan IPL hair removal untuk area kaki.",
+        "long_description": "IPL Hair Removal Kaki menggunakan teknologi cahaya sebagai pilihan untuk mengurangi rambut di area kaki. Tim klinik akan menilai kondisi kulit dan rambut, lalu menjelaskan persiapan serta kemungkinan kebutuhan beberapa sesi.",
+        "images": [
+            "assets/media/services/intense-pulse-light-ipl-hair-removal-kaki/image-0.webp",
+            "assets/media/services/intense-pulse-light-ipl-hair-removal-kaki/image-1.webp"
+        ]
     },
     {
         "slug": "intense-pulse-light-ipl-hair-removal-lengan",
         "name": "Intense Pulse Light (IPL) Hair Removal Lengan",
-        "image": "assets/media/services/service-1.png",
-        "description": "Layanan IPL hair removal untuk area lengan."
+        "image": "assets/media/services/intense-pulse-light-ipl-hair-removal-lengan/image-0.webp",
+        "description": "Layanan IPL hair removal untuk area lengan.",
+        "long_description": "IPL Hair Removal Lengan menggunakan teknologi cahaya sebagai pilihan untuk mengurangi rambut di area lengan. Tim klinik akan menilai kondisi kulit dan rambut, lalu menjelaskan persiapan serta kemungkinan kebutuhan beberapa sesi.",
+        "images": [
+            "assets/media/services/intense-pulse-light-ipl-hair-removal-lengan/image-0.webp",
+            "assets/media/services/intense-pulse-light-ipl-hair-removal-lengan/image-1.webp"
+        ]
     }
 ]

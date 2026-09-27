@@ -4,6 +4,41 @@
             border-radius: 24px;
         }
 
+        .service-detail-image {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: contain;
+            background: #f7f4f6;
+        }
+
+        .service-detail-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+
+            &:empty {
+                display: none;
+            }
+
+            @media (max-width: 767px) {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            @media (max-width: 575px) {
+                grid-template-columns: 1fr;
+            }
+
+            img {
+                display: block;
+                width: 100%;
+                aspect-ratio: 4 / 3;
+                object-fit: contain;
+                border-radius: 16px;
+                background: #f7f4f6;
+            }
+        }
+
         .points {
             display: grid;
             grid-template-columns: repeat(2, 1fr);

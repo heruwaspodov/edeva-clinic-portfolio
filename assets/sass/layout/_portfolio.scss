@@ -30,6 +30,63 @@
     .clinic-gallery-item {
         aspect-ratio: 4 / 3;
     }
+
+    .clinic-image-trigger {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: zoom-in;
+    }
+}
+
+body.clinic-preview-open {
+    overflow: hidden;
+}
+
+.clinic-preview-modal {
+    position: fixed;
+    z-index: 2000;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.8);
+    &.is-open {
+        display: flex;
+    }
+    .clinic-preview-content {
+        position: relative;
+        max-width: min(100%, 1200px);
+        max-height: 100%;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        max-height: calc(100vh - 48px);
+        border-radius: 16px;
+        object-fit: contain;
+    }
+    .clinic-preview-close {
+        position: absolute;
+        z-index: 1;
+        top: 12px;
+        right: 12px;
+        display: grid;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border: 0;
+        border-radius: 50%;
+        color: $dark-gray;
+        background: $white;
+        font-size: 30px;
+        line-height: 1;
+        place-items: center;
+    }
 }
 .nav-tabs {
     border: none;

@@ -70,9 +70,19 @@
     function galleryMarkup(items) {
         return items
             .map(function (item) {
+                var imagePath = item.image.replace(/^\/+/, "");
+                var imageAlt = tagLabel(item.tag) + " at Edeva Clinic";
                 return (
                     '<div class="col-lg-4 col-md-6 col-12"><div class="portfolio-item clinic-gallery-item">' +
+                    '<button class="clinic-image-trigger" type="button" data-clinic-preview="/' +
+                    escapeHtml(imagePath) +
+                    '" data-clinic-preview-alt="' +
+                    escapeHtml(imageAlt) +
+                    '" aria-label="Perbesar gambar ' +
+                    escapeHtml(tagLabel(item.tag)) +
+                    '">' +
                     imageMarkup(item) +
+                    "</button>" +
                     '<div class="content bg-primary ui-p-30"><h6 class="white ui-mb-10">' +
                     escapeHtml(tagLabel(item.tag)) +
                     '</h6><h4 class="white">Edeva Clinic</h4></div></div></div>'
@@ -88,6 +98,62 @@
                 image.dataset.fallbackApplied = "true";
                 image.src = image.src.replace(/\.webp$/i, ".jpg");
             });
+        });
+    }
+
+    function previewModal() {
+        var modal = document.querySelector("[data-clinic-preview-modal]");
+        if (modal) return modal;
+
+        modal = document.createElement("div");
+        modal.className = "clinic-preview-modal";
+        modal.setAttribute("data-clinic-preview-modal", "");
+        modal.setAttribute("role", "dialog");
+        modal.setAttribute("aria-modal", "true");
+        modal.setAttribute("aria-label", "Preview gambar klinik");
+        modal.innerHTML =
+            '<div class="clinic-preview-content">' +
+            '<button class="clinic-preview-close" type="button" aria-label="Tutup preview">&times;</button>' +
+            '<img src="" alt="" data-clinic-preview-image />' +
+            "</div>";
+        modal.querySelector("[data-clinic-preview-image]").addEventListener("error", function (event) {
+            var image = event.currentTarget;
+            if (image.dataset.fallbackApplied) return;
+            image.dataset.fallbackApplied = "true";
+            image.src = image.src.replace(/\.webp$/i, ".jpg");
+        });
+
+        function closePreview() {
+            modal.classList.remove("is-open");
+            document.body.classList.remove("clinic-preview-open");
+        }
+
+        modal.addEventListener("click", function (event) {
+            if (event.target === modal || event.target.closest(".clinic-preview-close")) closePreview();
+        });
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" && modal.classList.contains("is-open")) closePreview();
+        });
+        document.body.appendChild(modal);
+        return modal;
+    }
+
+    function openPreview(source, alt) {
+        var modal = previewModal();
+        var image = modal.querySelector("[data-clinic-preview-image]");
+        image.dataset.fallbackApplied = "";
+        image.src = source;
+        image.alt = alt;
+        modal.classList.add("is-open");
+        document.body.classList.add("clinic-preview-open");
+        modal.querySelector(".clinic-preview-close").focus();
+    }
+
+    function addPreviewHandler(container) {
+        container.addEventListener("click", function (event) {
+            var trigger = event.target.closest("[data-clinic-preview]");
+            if (!trigger || !container.contains(trigger)) return;
+            openPreview(trigger.dataset.clinicPreview, trigger.dataset.clinicPreviewAlt);
         });
     }
 
@@ -150,6 +216,7 @@
                 if (!button || !container.contains(button)) return;
                 updateGallery(button.dataset.clinicFilter);
             });
+            addPreviewHandler(gallery);
             updateGallery("all");
         });
     }

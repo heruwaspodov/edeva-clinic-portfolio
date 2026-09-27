@@ -32,12 +32,26 @@
                 imageArea.className = "card-img";
 
                 var image = document.createElement("img");
-                image.src = "/" + product.image.replace(/^\/+/, "");
+                var imagePath = product.image.replace(/^\/+/, "");
+                var fallbackPath = imagePath.replace(/\.webp$/i, ".png");
+                image.src = "/" + imagePath;
                 image.alt = "Produk " + product.name;
                 image.width = 400;
                 image.height = 320;
                 image.loading = "lazy";
                 image.decoding = "async";
+                if (fallbackPath !== imagePath) {
+                    image.addEventListener(
+                        "error",
+                        (function (imageElement, fallback) {
+                            return function () {
+                                if (imageElement.dataset.fallbackApplied) return;
+                                imageElement.dataset.fallbackApplied = "true";
+                                imageElement.src = "/" + fallback;
+                            };
+                        })(image, fallbackPath)
+                    );
+                }
                 imageArea.appendChild(image);
 
                 var content = document.createElement("div");

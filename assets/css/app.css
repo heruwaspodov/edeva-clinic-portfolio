@@ -31466,6 +31466,11 @@ body.clinic-preview-open {
 
 .products-sec .blog-card .card-content .title {
     margin-bottom: 12px;
+    display: -webkit-box;
+    min-height: 2.8em;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .products-sec .blog-card .card-content .product-description {
@@ -31490,8 +31495,16 @@ body.clinic-preview-open {
     padding: 0;
 }
 
+.products-home-sec .blog-card .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 136px;
+}
+
 .products-home-sec .blog-card .card-content .title {
     margin-bottom: 0;
+    text-align: center;
 }
 
 .products-home-sec .products-pagination li {

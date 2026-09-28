@@ -28163,6 +28163,12 @@ label.error {
     animation: preloader-logo-blink 1.2s ease-in-out infinite alternate;
 }
 
+@media (max-width: 767px) {
+    #preloader .preloader-logo {
+        transform: translateX(-2px);
+    }
+}
+
 #preloader #box {
     width: min(500px, 90vw);
     height: 60px;

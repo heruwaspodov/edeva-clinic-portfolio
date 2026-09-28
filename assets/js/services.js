@@ -24,6 +24,18 @@
         return detailBase + encodeURIComponent(service.slug);
     }
 
+    function fallbackSource(source) {
+        return source.replace(/\.webp$/i, ".jpg");
+    }
+
+    function addImageFallback(image) {
+        image.addEventListener("error", function () {
+            if (image.dataset.fallbackApplied) return;
+            image.dataset.fallbackApplied = "true";
+            image.src = image.src.replace(/\.webp$/i, ".jpg");
+        });
+    }
+
     function cardMarkup(service, mode) {
         var grid = mode === "grid";
         var content =
@@ -31,7 +43,7 @@
             escapeHtml(service.image) +
             '" alt="Ilustrasi layanan ' +
             escapeHtml(service.name) +
-            '" loading="lazy" />' +
+            '" loading="lazy" data-service-image />' +
             '<span class="overlay"></span>' +
             '<span class="content d-flex align-items-end ui-gap-20">' +
             '<span class="text-block"><span class="h4 white service-card-title' +
@@ -79,6 +91,7 @@
                     return cardMarkup(service, mode);
                 })
                 .join("");
+            container.querySelectorAll("[data-service-image]").forEach(addImageFallback);
         });
     }
 
@@ -102,25 +115,32 @@
         });
     }
 
-    function renderGallery(service, container, heroSource, unavailableSource) {
+    function renderGallery(service, container, heroSource) {
         if (!Array.isArray(service.images)) return;
 
         Promise.all(
             service.images
                 .filter(function (source) {
-                    return source !== heroSource && source !== unavailableSource;
+                    return source !== heroSource;
                 })
                 .map(function (source, index) {
                     return new Promise(function (resolve) {
                         var image = new Image();
+                        var sources = [source, fallbackSource(source)];
+                        var sourceIndex = 0;
                         image.alt = "Foto " + service.name + " " + (index + 1);
                         image.onload = function () {
                             resolve(image);
                         };
                         image.onerror = function () {
+                            sourceIndex += 1;
+                            if (sourceIndex < sources.length) {
+                                image.src = "/" + sources[sourceIndex];
+                                return;
+                            }
                             resolve(null);
                         };
-                        image.src = "/" + source;
+                        image.src = "/" + sources[sourceIndex];
                     });
                 }),
         ).then(function (images) {
@@ -209,9 +229,20 @@
         var relatedPanel = container.querySelector(".service-related");
         var gallery = container.querySelector("[data-service-gallery]");
         var preferredSource = service.image.replace(/image-0\.webp$/, "image-1.webp");
-        var unavailableSource = null;
+        var heroCandidates = [];
+        [preferredSource, service.image].forEach(function (source) {
+            [source, fallbackSource(source)].forEach(function (url) {
+                if (!heroCandidates.some(function (candidate) { return candidate.url === url; })) {
+                    heroCandidates.push({ source: source, url: url });
+                }
+            });
+        });
+        var heroIndex = 0;
         function syncRelatedHeight() {
             relatedPanel.style.height = mainImage.getBoundingClientRect().height + "px";
+        }
+        function loadHero() {
+            mainImage.src = "/" + heroCandidates[heroIndex].url;
         }
         syncRelatedHeight();
         if (typeof ResizeObserver !== "undefined") {
@@ -221,15 +252,15 @@
         }
         mainImage.onload = function () {
             syncRelatedHeight();
-            renderGallery(service, gallery, mainImage.getAttribute("src").slice(1), unavailableSource);
+            renderGallery(service, gallery, heroCandidates[heroIndex].source);
         };
         mainImage.onerror = function () {
-            if (mainImage.getAttribute("src") !== "/" + service.image) {
-                unavailableSource = preferredSource;
-                mainImage.src = "/" + service.image;
+            heroIndex += 1;
+            if (heroIndex < heroCandidates.length) {
+                loadHero();
             }
         };
-        mainImage.src = "/" + preferredSource;
+        loadHero();
     }
 
     function showLoadError() {

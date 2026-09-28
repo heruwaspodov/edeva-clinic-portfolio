@@ -1,101 +1,101 @@
 [
     {
-        "name": "GSFW - Gentle Skin Facial Wash",
+        "name": "Gentle Skin Facial Wash",
         "image": "assets/media/products/gsfw.webp",
         "description": "Pembersih wajah lembut untuk membantu mengangkat kotoran dan minyak."
     },
     {
-        "name": "LNC - Lightening Night Cream",
+        "name": "Lightening Night Cream",
         "image": "assets/media/products/lnc.webp",
         "description": "Krim malam untuk membantu mencerahkan kulit kusam dan menyamarkan noda."
     },
     {
-        "name": "HFT - Hydration Face Toner",
+        "name": "Hydration Face Toner",
         "image": "assets/media/products/hft.webp",
         "description": "Toner wajah untuk membantu menyegarkan kulit."
     },
     {
-        "name": "SPBL - Sun Pro Body Lotion",
+        "name": "Sun Pro Body Lotion",
         "image": "assets/media/products/spbl.webp",
         "description": "Losion tubuh untuk membantu melembapkan dan merawat kulit."
     },
     {
-        "name": "LLC - Luminous Light Cream",
+        "name": "Luminous Light Cream",
         "image": "assets/media/products/llc.webp",
         "description": "Krim ringan untuk membantu mencerahkan kulit wajah."
     },
     {
-        "name": "LBL - Lightening Body Lotion",
+        "name": "Lightening Body Lotion",
         "image": "assets/media/products/lbl.webp",
         "description": "Losion tubuh untuk membantu merawat dan melembapkan kulit."
     },
     {
-        "name": "BGS - Brilliant Glow Serum",
+        "name": "Brilliant Glow Serum",
         "image": "assets/media/products/bgs.webp",
         "description": "Serum untuk membantu mencerahkan kulit dan menyamarkan noda hitam."
     },
     {
-        "name": "AG - Acne Glow",
+        "name": "Acne Glow",
         "image": "assets/media/products/ag.webp",
         "description": "Krim perawatan untuk kulit wajah berjerawat."
     },
     {
-        "name": "DCP - Day Cream Pink",
+        "name": "Day Cream Pink",
         "image": "assets/media/products/dcp.webp",
         "description": "Krim siang untuk membantu menjaga kelembapan kulit."
     },
     {
-        "name": "SG49++ - Sun Guard",
+        "name": "Sun Guard",
         "image": "assets/media/products/sg49-plus-plus.webp",
         "description": "Pelindung wajah dari paparan sinar matahari dengan SPF 49 PA+++."
     },
     {
-        "name": "MDC - Moisturizer Day Cream",
+        "name": "Moisturizer Day Cream",
         "image": "assets/media/products/mdc.webp",
         "description": "Krim siang pelembap untuk membantu menjaga kulit tetap halus."
     },
     {
-        "name": "SPG - Sun Pro Gel",
+        "name": "Sun Pro Gel",
         "image": "assets/media/products/spg.webp",
         "description": "Gel untuk membantu melindungi kulit wajah dari sinar matahari."
     },
     {
-        "name": "ROC - Retinol Overnight Cream",
+        "name": "Retinol Overnight Cream",
         "image": "assets/media/products/roc.webp",
         "description": "Krim malam dengan retinol untuk perawatan kulit wajah."
     },
     {
-        "name": "AS - Acne Serum",
+        "name": "Acne Serum",
         "image": "assets/media/products/as.webp",
         "description": "Serum untuk perawatan kulit wajah berjerawat."
     },
     {
-        "name": "BFS - Brightening Face Serum",
+        "name": "Brightening Face Serum",
         "image": "assets/media/products/bfs.webp",
         "description": "Serum untuk membantu mencerahkan kulit wajah."
     },
     {
-        "name": "AGNC - Acne Glow Night Cream",
+        "name": "Acne Glow Night Cream",
         "image": "assets/media/products/agnc.webp",
         "description": "Krim malam untuk membantu mencerahkan kulit wajah."
     },
     {
-        "name": "ACFW - Acne Care Facial Wash",
+        "name": "Acne Care Facial Wash",
         "image": "assets/media/products/acfw.webp",
         "description": "Pembersih wajah untuk kulit berjerawat, membantu mengangkat kotoran dan minyak."
     },
     {
-        "name": "PCS - Pore Control Serum",
+        "name": "Pore Control Serum",
         "image": "assets/media/products/pcs.webp",
         "description": "Serum untuk perawatan kulit yang cenderung berminyak dan berpori besar."
     },
     {
-        "name": "SPB - Sun Pro Brightener",
+        "name": "Sun Pro Brightener",
         "image": "assets/media/products/spb.webp",
         "description": "Perawatan wajah untuk membantu melindungi dari sinar matahari."
     },
     {
-        "name": "LN - Luminous Night",
+        "name": "Luminous Night",
         "image": "assets/media/products/ln.webp",
         "description": "Krim malam untuk membantu mencerahkan kulit wajah."
     }
